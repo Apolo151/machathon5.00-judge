@@ -69,7 +69,6 @@ ament_python_install_package(${PROJECT_NAME})
 # Install Python executables
 install(PROGRAMS
   scripts/prius_teleop_keyboard.py
-  scripts/joystick_translator.py
   DESTINATION lib/${PROJECT_NAME}
 )
 install(TARGETS PriusHybridPlugin
@@ -93,7 +92,7 @@ endif()
 ament_package()
 
 install(
-  DIRECTORY launch models rviz worlds
+  DIRECTORY launch models worlds
   DESTINATION share/${PROJECT_NAME}
 )
 
