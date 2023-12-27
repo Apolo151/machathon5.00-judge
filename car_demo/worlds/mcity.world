@@ -4,14 +4,7 @@
     <gui fullscreen='0'>
       <plugin name='keyboard' filename='libKeyboardGUIPlugin.so'/>
       <camera name="user_camera">
-        <!-- <pose>89.90 -309.03 10.39 0 0.24 1.63</pose> -->
-        <track_visual>
-          <name>prius</name>
-          <static>false</static>
-          <min_dist>7</min_dist>
-          <xyz>-20 0 15</xyz>
-          <inherit_yaw></inherit_yaw>
-        </track_visual>
+        <pose>-70 -450.03 10.39 0 0.24 1.63</pose>
       </camera>
     </gui>
 
