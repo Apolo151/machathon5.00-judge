@@ -2,17 +2,18 @@ The Machathon 5.00 repository provides all the required tools and utilities for 
 
 # Requirements
 
- a-Using ROS2 humble(Ubuntu 22.04): 
+ a-Using ROS2 humble(Ubuntu 22.04) installation: 
      * [Install ROS2 humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
-
- b-Or using ROS2 foxy(Ubuntu 20.04) installation:
+ OR
+ b-Using ROS2 foxy(Ubuntu 20.04) installation:
      * [Install ROS2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
 
 # Building
 
 ```
-$ cd ~/ros2_ws/
+$ cd ~/ros2_ws/src
 $ git clone https://github.com/Apolo151/machathon5.00
+$ cd ..
 $ colcon build  --packages-up-to car_demo  --symlink-install 
 ```
 
