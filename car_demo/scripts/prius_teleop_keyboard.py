@@ -63,9 +63,10 @@ class PriusTeleop(Node):
     def teleop(self):
         global msg
         try:
-            self.get_logger().info("I had a son")
+            
             print(self.vels(self.speed, self.turn))
             while(1):
+                self.get_logger().info(str(self.speed))
                 # command = Control()
                 key = self.getKey()
                 # key == 'i': throttle +, steering 0, gear FORWARD, braking 0
