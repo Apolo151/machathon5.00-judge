@@ -395,12 +395,12 @@
     <plugin name="p3d" filename="libgazebo_ros_p3d.so">
       <ros>
         <namespace>prius</namespace>
-        <argument>odom:=ground_truth</argument>
+        <argument>--ros-args --remap odom:=ground_truth</argument>
       </ros>
       <!-- <robotNamespace>/prius</robotNamespace> -->
-      <body_name>base_link</body_name>
+      <body_name>chassis</body_name>
       <topic_name>base_pose_ground_truth</topic_name>
-      <frame_name>chassis</frame_name>
+      <frame_name>world</frame_name>
       <gaussian_noise>0.01</gaussian_noise>
     </plugin>
   </gazebo>
