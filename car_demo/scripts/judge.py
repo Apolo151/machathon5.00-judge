@@ -1,12 +1,9 @@
-
 import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 import time
 
-
-
-class MyNode(Node):
+class Judge(Node):
 
     def start_timer(self):
         self.start_time = time.time()
@@ -20,7 +17,6 @@ class MyNode(Node):
             elapsed_time = end_time - self.start_time
             print(f"Elapsed time: {elapsed_time} seconds")
             self.timer_started = False
-
 
     def __init__(self):
         self.timer_started = False 
@@ -47,27 +43,16 @@ class MyNode(Node):
                 self.checkpointIndex += 1
                 print("GOOD JOOOOOOOOOOOOOOOOOOOOOOOOOB")
 
-
-
-
         if((abs(x-self.xF)<=6) and (abs(y-self.yF)<=6) and (abs(z-self.zF)<=1) and self.checkpointIndex == 3):
             print("HEEEEEEYOOOOOOOOOOOO")
             self.stop_timer()
             while 1:
                 pass
 
-
-
-
-
 def main():
     rclpy.init()
-
-
-    node = MyNode()
+    node = Judge()
     rclpy.spin(node)
-
-
     rclpy.shutdown()
 
 if __name__ == '__main__':
