@@ -17,7 +17,7 @@ def generate_launch_description():
 
     poses = {
         "0": {"x": 0.0, "y": 0.0, "z": 0.5, "Z": 0.0},
-        "1": {"x": -78.4, "y": -407.75, "z": 0.5, "Z": 0.5},
+        "1": {"x": 73.66, "y": -470.31, "z": -4, "Z": 0.5},
     }
     # Launch configuration variables specific to simulation
     x_pose = LaunchConfiguration('x_pose', default='0.0')

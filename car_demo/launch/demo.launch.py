@@ -18,7 +18,7 @@ def generate_launch_description():
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
     os.environ["GAZEBO_MODEL_PATH"] = os.path.join(
         get_package_share_directory('car_demo'), "models")
-    world_file_name = 'mcity.world'
+    world_file_name = 'MachathonTrack.world'
     world = os.path.join(get_package_share_directory(
         "car_demo"), 'worlds', world_file_name)
     urdf = os.path.join(
