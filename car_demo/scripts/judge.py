@@ -3,13 +3,32 @@ from rclpy.node import Node
 from nav_msgs.msg import Odometry
 import time
 
-class Judge(Node):
+FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
+
+class Checkpoints():
+    def __init__(self):
+        self.checkpoints_passed = [False] * 3
+        self.curr_checkpoint_idx = 0
+        # TODO: remove hardcoded values
+        self.checkpoints_pos = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
+
+    def checkPassedCheckpoints(self, x, y, z):
+        if(self.checkpoint_idx < 3):
+            if((abs(x - self.checkpoints_pos[self.curr_checkpoint_idx][0])<=6) 
+                and (abs(y - self.checkpoints_pos[self.curr_checkpoint_idx][1])<=6) 
+                and (abs(z - self.checkpoints_pos[self.curr_checkpoint_idx][2])<=2)):
+                self.curr_checkpoint_idx += 1
+                print("You passed a checkpoint, GOOD JOB!")
+
+class Timer():
+    def __init__(self):
+        self.timer_started = False
+        self.start_time = 0.0
 
     def start_timer(self):
         self.start_time = time.time()
         self.timer_started = True
         print("Timer started!")
-        pass
 
     def stop_timer(self):
         if self.timer_started:
@@ -18,37 +37,35 @@ class Judge(Node):
             print(f"Elapsed time: {elapsed_time} seconds")
             self.timer_started = False
 
+class Judge(Node):
     def __init__(self):
-        self.timer_started = False 
-        self.start_time = 0.0
-        self.start_timer()
-        self.xF = 70.508037
-        self.yF= -469.2935
-        self.zF= -4.42
-        self.checkpoints = [False] * 3
-        self.checkpointIndex = 0
-        #To do (not me)
-        self.checkpointpositions = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
+        self.final_pos = {"x": FINAL_X,"y": FINAL_Y,"z": FINAL_Z}
+        self.timer = Timer()
+        self.checkpoints = Checkpoints()
+        ####
         super().__init__("subscriber_node")
-        self.get_logger().info("Oi mate i'm ros2")
         self.pose_subscriber = self.create_subscription(Odometry,"/prius/odom",self.callback,10)
+        self.get_logger().info("Oi mate i'm ros2")
+        self.timer.start_timer()
+
 
     def callback(self,msg:Odometry):
         x=msg.pose.pose.position.x
         y=msg.pose.pose.position.y
         z=msg.pose.pose.position.z
-
-        if(self.checkpointIndex <3):
-            if((abs(x - self.checkpointpositions[self.checkpointIndex][0])<=6) and (abs(y - self.checkpointpositions[self.checkpointIndex][1])<=6) and (abs(z - self.checkpointpositions[self.checkpointIndex][2])<=2)):
-                self.checkpointIndex += 1
-                print("GOOD JOOOOOOOOOOOOOOOOOOOOOOOOOB")
-
-        if((abs(x-self.xF)<=6) and (abs(y-self.yF)<=6) and (abs(z-self.zF)<=1) and self.checkpointIndex == 3):
-            print("HEEEEEEYOOOOOOOOOOOO")
-            self.stop_timer()
+        self.checkpoints.checkPassedCheckpoints(x,y,z)
+        ####
+        ## check if the car passed all checkpoints, and just passed the finish line
+        if((self.checkpoints.checkpoint_idx == 3 and
+            (abs(y-self.final_pos['y'])<=6) and
+              (abs(z-self.final_pos['z'])<=1) and
+                abs(x-self.final_pos['x'])<=6)):
+            print("You finished your race!!!!!")
+            self.timer.stop_timer()
             while 1:
                 pass
 
+######
 def main():
     rclpy.init()
     node = Judge()
