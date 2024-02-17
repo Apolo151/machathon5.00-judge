@@ -4,6 +4,9 @@ from nav_msgs.msg import Odometry
 import time
 
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
+# TODO: add submission JSON
+
+# TODO: send request to API
 
 class Checkpoints():
     def __init__(self):
@@ -62,6 +65,9 @@ class Judge(Node):
                 abs(x-self.final_pos['x'])<=6)):
             print("You finished your race!!!!!")
             self.timer.stop_timer()
+            # TODO: save first lap time
+            # TODO: repwan for second lap
+            # TODO: alter to check for second lap finish time
             while 1:
                 pass
 
