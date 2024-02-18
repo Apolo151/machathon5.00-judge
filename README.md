@@ -14,6 +14,12 @@ $ sudo apt -y install gazebo
 $ sudo apt install ros-humble-gazebo-ros-pkgs
 $ sudo apt install ros-humble-xacro
 ```
+* Python version 3.8 (humble) or 3.10 (foxy)
+* keyboard package
+```bash
+$ sudo apt install pip
+$ sudo pip install keyboard
+```
 ## Setting up the environment
 #### 1. Create a workspace
  ```bash
