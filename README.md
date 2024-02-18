@@ -2,8 +2,8 @@
 <p align="center">
     <img src="https://github.com/Apolo151/machathon5.00/assets/110634473/90477a3a-5e30-4b0c-a62b-65722f0271ca"
       alt="Picture" 
-        width="800" 
-        height="600" 
+        width="400" 
+        height="200" 
         style="display: block; margin: 0 auto" 
      >
 p>
