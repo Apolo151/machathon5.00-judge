@@ -8,7 +8,7 @@
      >
 </p>
 
-##### This repository provides all the required tools and utilities for the Machathon 5.00 simulation phase. A gazebo world that contains the competition vehicle and the track. <br> The car navigates in one direction, followed by navigating in the opposite direction. The time taken to complete each run, known as the lap time, is recorded. <br> After completing the track in both directions, the lap time for both runs is sent via HTTP request to the leaderboard. The starting navigation direction of the track for the first run, the car is moving clockwise, and for the second run, the car is moving anti-clockwise along the full track.
+<p> This repository provides all the required tools and utilities for the Machathon 5.00 simulation phase. A gazebo world that contains the competition vehicle and the track. <br> The car navigates in one direction, followed by navigating in the opposite direction. The time taken to complete each run, known as the lap time, is recorded. <br> After completing the track in both directions, the lap time for both runs is sent via HTTP request to the leaderboard. The starting navigation direction of the track for the first run, the car is moving clockwise, and for the second run, the car is moving anti-clockwise along the full track. </p>
 ## Requirements
 * ROS2 installation using any of the following options
   * Using ROS2 humble(Ubuntu 22.04) installation: 
