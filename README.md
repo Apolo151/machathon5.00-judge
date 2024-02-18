@@ -26,7 +26,7 @@ $ mkdir src
 ```
 #### 3. Clone the repository inside the src folder
  ```bash
-# cd src
+$ cd src
 $ git clone https://github.com/Apolo151/machathon5.00.git
 ```
 #### 4. Build the workspace
