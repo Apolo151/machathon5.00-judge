@@ -2,10 +2,10 @@ The Machathon 5.00 repository provides all the required tools and utilities for 
 
 # Requirements
 * ROS2 installation
-  a-Using ROS2 humble(Ubuntu 22.04) installation: 
+  * Using ROS2 humble(Ubuntu 22.04) installation: 
       * [Install ROS2 humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
   OR
-  b-Using ROS2 foxy(Ubuntu 20.04) installation:
+  * Using ROS2 foxy(Ubuntu 20.04) installation:
       * [Install ROS2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
 
 ## Install Gazebo and ROS-Gazebo packages
