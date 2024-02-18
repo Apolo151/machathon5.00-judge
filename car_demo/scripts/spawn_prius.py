@@ -9,12 +9,8 @@ from ament_index_python.packages import get_package_share_directory
 from gazebo_msgs.srv import SpawnEntity
 
 
-def spawn(x,y,z):
-
-    # Start node
-    rclpy.init()
+def spawn(x,y,z,x_angle,y_angle,z_angle):
     node = rclpy.create_node("entity_spawner")
-
     node.get_logger().info(
         'Creating Service client to connect to `/spawn_entity`')
     client = node.create_client(SpawnEntity, "/spawn_entity")
@@ -35,6 +31,10 @@ def spawn(x,y,z):
     request.initial_pose.position.x = float(x)
     request.initial_pose.position.y = float(y)
     request.initial_pose.position.z = float(z)
+    request.initial_pose.orientation.x = float(x_angle)
+    request.initial_pose.orientation.y = float(y_angle)
+    request.initial_pose.orientation.z = float(z_angle)
+
 
     node.get_logger().info("Sending service request to `/spawn_entity`")
     future = client.call_async(request)
@@ -45,7 +45,4 @@ def spawn(x,y,z):
         raise RuntimeError(
             'exception while calling service: %r' % future.exception())
 
-    node.get_logger().info("Done! Shutting down node.")
-    node.destroy_node()
-    rclpy.shutdown()
-
+    print("Done")

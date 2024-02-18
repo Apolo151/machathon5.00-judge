@@ -9,8 +9,7 @@ from gazebo_msgs.srv import DeleteEntity
 
 def despawn():
     # Start node
-    rclpy.init()
-    node = rclpy.create_node("entity_spawner")
+    node = rclpy.create_node("entity_despawner")
 
     node.get_logger().info(
         'Creating Service client to connect to `/spawn_entity`')
@@ -35,7 +34,4 @@ def despawn():
         raise RuntimeError(
             'exception while calling service: %r' % future.exception())
 
-    node.get_logger().info("Done! Shutting down node.")
-    node.destroy_node()
-    rclpy.shutdown()
-
+    print("Done")
