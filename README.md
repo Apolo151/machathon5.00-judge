@@ -1,21 +1,20 @@
-## The Machathon 5.00 repository provides all the required tools and utilities for the Machathon 5.00 simulation phase
+## Description
+### The Machathon 5.00 repository provides all the required tools and utilities for the Machathon 5.00 simulation phase
 
-### Requirements
+## Requirements
 * ROS2 installation using any of the following options
   * Using ROS2 humble(Ubuntu 22.04) installation: 
       * [Install ROS2 humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
   * Using ROS2 foxy(Ubuntu 20.04) installation:
       * [Install ROS2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
-
-### Install Gazebo and ROS-Gazebo packages
-
+* Gazebo and ROS-Gazebo packages Installation
 ```bash
 $ sudo apt update
 $ sudo apt -y install gazebo
 $ sudo apt install ros-humble-gazebo-ros-pkgs
 $ sudo apt install ros-humble-xacro
 ```
-### Setting up the environment
+## Setting up the environment
 #### 1. Create a workspace
  ```bash
 $ mkdir workspace_name
@@ -35,7 +34,7 @@ $ git clone https://github.com/Apolo151/machathon5.00.git
 $ cd ..
 $ colcon build --symlink-install
 ```
-### To run the scene 
+## To run the scene 
 #### 1. Open Gazebo Scene
 ```bash
 $ cd workspace_name
@@ -51,7 +50,7 @@ $ source ~/.bashrc
 $ source install/setup.bash
 $ ros2 run car_demo prius_teleop_keyboard.py
 ```
-### Simulation Scene Description
+## Simulation Scene Description
 * You are provided with a gazebo world that contains the competition vehicle and the track.
 * The car navigates it in one direction, followed by navigating it in the opposite direction. The time taken to complete each run, known as the lap time, is recorded.
 * After completing the track in both directions, the lap time for both runs is sent via HTTP request to the leaderboard.
