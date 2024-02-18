@@ -17,6 +17,15 @@ $ sudo apt install ros-humble-gazebo-ros-pkgs
 $ sudo apt install ros-humble-xacro
 ```
 ## Setting up and Building
+1. create a workspace
+ ```bash
+$ mkdir workspace_name
+```
+2.create src folder inside workspace
+ ```bash
+$ cd workspace_name
+$ mkdir src
+```
 ```bash
 $ cd ~/ros2_ws/src
 $ git clone https://github.com/Apolo151/machathon5.00 # (if you don’t have git, install it: sudo apt install git)
