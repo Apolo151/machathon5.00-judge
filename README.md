@@ -45,20 +45,10 @@ $ source ~/.bashrc
 $ ros2 launch car_demo demo.launch.py
 ```
 #### 2. Run ROS2 python code to control the car via the keyboard
-
-## Running
-#### To run the scene:
-```bash
-$ source /usr/share/gazebo/setup.bash
-$ source ~/ros2_ws/install/setup.bash
-$ ros2 launch car_demo demo.launch.py
-```
-#### To control the car via keyboard
-##### Open another terminal and run:
-```bash
+1. open another terminal and run the following commands
+ ```bash
 $ sudo su
-$ source .bashrc 
-$ source /opt/ros/humble/setup.bash
-$ source /home/<user_name>/ros2_ws/install/setup.bash
+$ source ~/.bashrc
+$ source install/setup.bash
 $ ros2 run car_demo prius_teleop_keyboard.py
 ```
