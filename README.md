@@ -1,10 +1,9 @@
 The Machathon 5.00 repository provides all the required tools and utilities for the Machathon 5.00 simulation phase
 
 # Requirements
-* ROS2 installation
+* ROS2 installation using any of the following options
   * Using ROS2 humble(Ubuntu 22.04) installation: 
       * [Install ROS2 humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
-  OR
   * Using ROS2 foxy(Ubuntu 20.04) installation:
       * [Install ROS2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
 
