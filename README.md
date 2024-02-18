@@ -1,9 +1,7 @@
-## Description
-* The Machathon 5.00 repository provides all the required tools and utilities for the Machathon 5.00 simulation phase
-* You are provided with a gazebo world that contains the competition vehicle and the track.
-* The car navigates it in one direction, followed by navigating it in the opposite direction. The time taken to complete each run, known as the lap time, is recorded.
-* After completing the track in both directions, the lap time for both runs is sent via HTTP request to the leaderboard.
-* The starting navigation direction of the track for the first run, the car is moving clockwise, and for the second run, the car is moving anti-clockwise along the full track.
+## Machathon 5.00
+![machathon](https://github.com/Apolo151/machathon5.00/assets/110634473/90477a3a-5e30-4b0c-a62b-65722f0271ca)
+
+This repository provides all the required tools and utilities for the Machathon 5.00 simulation phase. You are provided with a gazebo world that contains the competition vehicle and the track. The car navigates it in one direction, followed by navigating it in the opposite direction. The time taken to complete each run, known as the lap time, is recorded. After completing the track in both directions, the lap time for both runs is sent via HTTP request to the leaderboard. The starting navigation direction of the track for the first run, the car is moving clockwise, and for the second run, the car is moving anti-clockwise along the full track.
 ## Requirements
 * ROS2 installation using any of the following options
   * Using ROS2 humble(Ubuntu 22.04) installation: 
