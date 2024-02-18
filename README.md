@@ -26,6 +26,10 @@ $ mkdir workspace_name
 $ cd workspace_name
 $ mkdir src
 ```
+3.clone the repository
+ ```bash
+$ git clone https://github.com/Apolo151/machathon5.00.git
+```
 ```bash
 $ cd ~/ros2_ws/src
 $ git clone https://github.com/Apolo151/machathon5.00 # (if you don’t have git, install it: sudo apt install git)
