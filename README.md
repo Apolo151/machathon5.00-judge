@@ -52,3 +52,8 @@ $ source ~/.bashrc
 $ source install/setup.bash
 $ ros2 run car_demo prius_teleop_keyboard.py
 ```
+## Simulation Scene Description
+* You are provided with a gazebo world that contains the competition vehicle and the track.
+* The car navigates it in one direction, followed by navigating it in the opposite direction. The time taken to complete each run, known as the lap time, is recorded.
+* After completing the track in both directions, the lap time for both runs is sent via HTTP request to the leaderboard.
+* The starting navigation direction of the track for the first run, the car is moving clockwise, and for the second run, the car is moving anti-clockwise along the full track.
