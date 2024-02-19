@@ -45,4 +45,4 @@ def spawn(x,y,z,x_angle,y_angle,z_angle):
         raise RuntimeError(
             'exception while calling service: %r' % future.exception())
 
-    print("Done")
+    node.destroy_node()

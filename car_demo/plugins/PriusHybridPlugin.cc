@@ -1198,75 +1198,75 @@ namespace gazebo_plugins
     case 87:
     case 119:
     {
-      this->impl_->brakePedalPercent = 0.0;
-      this->impl_->gasPedalPercent += 0.1;
-      this->impl_->gasPedalPercent =
-          std::min(this->impl_->gasPedalPercent, 1.0);
-      this->impl_->directionState = PriusHybridPluginPrivate::FORWARD;
-      this->impl_->lastPedalCmdTime = this->impl_->world->SimTime();
+      // this->impl_->brakePedalPercent = 0.0;
+      // this->impl_->gasPedalPercent += 0.1;
+      // this->impl_->gasPedalPercent =
+      //     std::min(this->impl_->gasPedalPercent, 1.0);
+      // this->impl_->directionState = PriusHybridPluginPrivate::FORWARD;
+      // this->impl_->lastPedalCmdTime = this->impl_->world->SimTime();
       break;
     }
     // a - steer left
     case 65:
     case 97:
     {
-      this->impl_->handWheelCmd += 0.25;
-      this->impl_->handWheelCmd = std::min(this->impl_->handWheelCmd,
-                                           this->impl_->handWheelHigh);
-      this->impl_->lastSteeringCmdTime = this->impl_->world->SimTime();
+      // this->impl_->handWheelCmd += 0.25;
+      // this->impl_->handWheelCmd = std::min(this->impl_->handWheelCmd,
+      //                                      this->impl_->handWheelHigh);
+      // this->impl_->lastSteeringCmdTime = this->impl_->world->SimTime();
       break;
     }
     // s - reverse
     case 83:
     case 115:
     {
-      this->impl_->brakePedalPercent = 0.0;
-      if (this->impl_->directionState != PriusHybridPluginPrivate::REVERSE)
-        this->impl_->gasPedalPercent = 0.0;
-      this->impl_->gasPedalPercent += 0.1;
-      this->impl_->gasPedalPercent =
-          std::min(this->impl_->gasPedalPercent, 1.0);
-      this->impl_->directionState = PriusHybridPluginPrivate::REVERSE;
-      this->impl_->lastPedalCmdTime = this->impl_->world->SimTime();
+      // this->impl_->brakePedalPercent = 0.0;
+      // if (this->impl_->directionState != PriusHybridPluginPrivate::REVERSE)
+      //   this->impl_->gasPedalPercent = 0.0;
+      // this->impl_->gasPedalPercent += 0.1;
+      // this->impl_->gasPedalPercent =
+      //     std::min(this->impl_->gasPedalPercent, 1.0);
+      // this->impl_->directionState = PriusHybridPluginPrivate::REVERSE;
+      // this->impl_->lastPedalCmdTime = this->impl_->world->SimTime();
       break;
     }
     // d - steer right
     case 68:
     case 100:
     {
-      this->impl_->handWheelCmd -= 0.25;
-      this->impl_->handWheelCmd = std::max(this->impl_->handWheelCmd,
-                                           this->impl_->handWheelLow);
-      this->impl_->lastSteeringCmdTime = this->impl_->world->SimTime();
+      // this->impl_->handWheelCmd -= 0.25;
+      // this->impl_->handWheelCmd = std::max(this->impl_->handWheelCmd,
+      //                                      this->impl_->handWheelLow);
+      // this->impl_->lastSteeringCmdTime = this->impl_->world->SimTime();
       break;
     }
     // e brake
     case 69:
     case 101:
     {
-      this->impl_->brakePedalPercent = 1.0;
-      this->impl_->gasPedalPercent = 0.0;
-      this->impl_->lastPedalCmdTime = this->impl_->world->SimTime();
+      // this->impl_->brakePedalPercent = 1.0;
+      // this->impl_->gasPedalPercent = 0.0;
+      // this->impl_->lastPedalCmdTime = this->impl_->world->SimTime();
       break;
     }
     // x neutral
     case 88:
     case 120:
     {
-      this->impl_->directionState = PriusHybridPluginPrivate::NEUTRAL;
+      // this->impl_->directionState = PriusHybridPluginPrivate::NEUTRAL;
       break;
     }
     // q - EV mode
     case 81:
     case 113:
     {
-      // avoid rapid mode changes due to repeated key press
-      gazebo::common::Time now = this->impl_->world->SimTime();
-      if ((now - this->impl_->lastModeCmdTime).Double() > 0.3)
-      {
-        this->impl_->evMode = !this->impl_->evMode;
-        this->impl_->lastModeCmdTime = now;
-      }
+      // // avoid rapid mode changes due to repeated key press
+      // gazebo::common::Time now = this->impl_->world->SimTime();
+      // if ((now - this->impl_->lastModeCmdTime).Double() > 0.3)
+      // {
+      //   this->impl_->evMode = !this->impl_->evMode;
+      //   this->impl_->lastModeCmdTime = now;
+      // }
       break;
     }
     default:

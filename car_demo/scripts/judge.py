@@ -5,6 +5,8 @@ import time
 import spawn_prius
 import despawn_prius
 import json
+import time
+import sys
 
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
 # TODO: add submission JSON
@@ -33,7 +35,10 @@ class Checkpoints():
                 and (abs(y - self.checkpoints_pos[self.curr_checkpoint_idx][1])<=6) 
                 and (abs(z - self.checkpoints_pos[self.curr_checkpoint_idx][2])<=2)):
                 self.curr_checkpoint_idx -= 1
-                print("You passed a checkpoint, GOOD JOB!") 
+                print("You passed a checkpoint, GOOD JOB!")
+         
+         
+         
 
 class Timer():
     def __init__(self):
@@ -55,7 +60,7 @@ class Timer():
             return elapsed_time
 
 class Judge(Node):
-    def __init__(self,Team_Name:str, Submit:bool):
+    def __init__(self,Team_Name:str):
         despawn_prius.despawn()
         spawn_prius.spawn(72.71,-470.1,-5,-0.007621,0.025542,-0.135)
         self.final_pos = {"x": FINAL_X,"y": FINAL_Y,"z": FINAL_Z}
@@ -68,14 +73,15 @@ class Judge(Node):
         #New Added By Jannah
         self.lap_completed = 0
         self.lapTime =[0,0]
-        self.sub = Submit
         self.submission_data = {
             "team_name": Team_Name,
             "lap1_time": None,
             "lap2_time": None,
-            "time_of_submission": None,
-            "Submit": Submit
+            "time_of_submission": None
         }
+
+
+
 
     def callback(self,msg:Odometry):
         x=msg.pose.pose.position.x
@@ -95,8 +101,9 @@ class Judge(Node):
             if self.lap_completed == 1 :
                 #remove the car from the scene and then add it again in the new start position
                 despawn_prius.despawn()
-                self.pose_subscriber.destroy()
+                time.sleep(1)
                 spawn_prius.spawn(67.167259,-468.920073,-4.9,-0.000198,0.00,12)
+                time.sleep(0.5)
                 #restart the subscriber to prevent glitches
                 self.pose_subscriber = self.create_subscription(Odometry,"/prius/odom",self.callback,10)
                 self.timer.start_timer()
@@ -105,21 +112,21 @@ class Judge(Node):
 
 
             if self.lap_completed == 2:
-                # after finishing lap 2 despwn the car
-                despawn_prius.despawn()
-                self.pose_subscriber.destroy()
                 self.submission_data["lap1_time"] = self.lapTime[0]
                 self.submission_data["lap2_time"] = self.lapTime[1]
                 self.submission_data["time_of_submission"] = time.strftime("%Y-%m-%d %H:%M:%S")
                 # Convert submission data to JSON format
                 submission_json = json.dumps(self.submission_data)
                 print(submission_json)
-                if self.sub:
-                    print('submitted')
+                self.destroy_node()
+                rclpy.shutdown()
+
+
+
 ######
 def main():
     rclpy.init()
-    node = Judge("Team Name", Submit = False)
+    node = Judge("Team Name")
     rclpy.spin(node)
     rclpy.shutdown()
 
