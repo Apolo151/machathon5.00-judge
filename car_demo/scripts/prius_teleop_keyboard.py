@@ -7,7 +7,6 @@ from prius_msgs.msg import Control
 
 import keyboard
 import sys
-import termios
 
 """
 Reading from the keyboard and Publishing to Prius Control!
@@ -25,7 +24,6 @@ class PriusTeleop(Node):
         super().__init__(node_name, namespace=name_space)
         qos = QoSReliabilityPolicy(1)
         self.pub = self.create_publisher(Control, "control", qos_profile=qos)
-        self.settings = termios.tcgetattr(sys.stdin)
         self.status = 0
         self.forward = False
         self.backward = False
@@ -86,7 +84,6 @@ class PriusTeleop(Node):
                 
                 if keyboard.is_pressed('space'):
                     self.command.throttle = 0.0
-                    self.command.shift_gears = Control.NEUTRAL
                     self.command.brake = 5.0
                     
                 self.pub.publish(self.command)
@@ -100,7 +97,6 @@ class PriusTeleop(Node):
             self.command.shift_gears = Control.NO_COMMAND
             self.command.brake = 0.0
             self.pub.publish(self.command)
-            termios.tcsetattr(sys.stdin, termios.TCSADRAIN, self.settings)
 
 def main(args=None):
     rclpy.init(args=args)
