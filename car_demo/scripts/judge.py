@@ -5,6 +5,8 @@ import time
 import spawn_prius
 import despawn_prius
 import json
+import time
+import sys
 
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
 # TODO: add submission JSON
@@ -79,8 +81,6 @@ class Judge(Node):
         }
 
 
-        
-
 
 
     def callback(self,msg:Odometry):
@@ -101,8 +101,9 @@ class Judge(Node):
             if self.lap_completed == 1 :
                 #remove the car from the scene and then add it again in the new start position
                 despawn_prius.despawn()
-                self.pose_subscriber.destroy()
+                time.sleep(1)
                 spawn_prius.spawn(67.167259,-468.920073,-4.9,-0.000198,0.00,12)
+                time.sleep(0.5)
                 #restart the subscriber to prevent glitches
                 self.pose_subscriber = self.create_subscription(Odometry,"/prius/odom",self.callback,10)
                 self.timer.start_timer()
@@ -111,12 +112,15 @@ class Judge(Node):
 
 
             if self.lap_completed == 2:
-             self.submission_data["lap1_time"] = self.lapTime[0]
-             self.submission_data["lap2_time"] = self.lapTime[1]
-             self.submission_data["time_of_submission"] = time.strftime("%Y-%m-%d %H:%M:%S")
-            # Convert submission data to JSON format
-             submission_json = json.dumps(self.submission_data)
-             print(submission_json)
+                self.submission_data["lap1_time"] = self.lapTime[0]
+                self.submission_data["lap2_time"] = self.lapTime[1]
+                self.submission_data["time_of_submission"] = time.strftime("%Y-%m-%d %H:%M:%S")
+                # Convert submission data to JSON format
+                submission_json = json.dumps(self.submission_data)
+                print(submission_json)
+                self.destroy_node()
+                rclpy.shutdown()
+
 
 
 ######
