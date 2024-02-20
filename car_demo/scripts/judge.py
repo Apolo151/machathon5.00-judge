@@ -10,6 +10,8 @@ import time
 import sys
 
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
+CHECKPOINTS_LIST = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
+
 # TODO: add submission JSON
 
 # TODO: send request to API
@@ -18,8 +20,7 @@ class Checkpoints():
     def __init__(self):
         self.checkpoints_passed = [False] * 3
         self.curr_checkpoint_idx = 0
-        # TODO: remove hardcoded values
-        self.checkpoints_pos = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
+        self.checkpoints_pos = CHECKPOINTS_LIST
 
     def checkPassedCheckpoints(self, x, y, z,lap_completed):    
      if lap_completed == 0 :
@@ -37,9 +38,6 @@ class Checkpoints():
                 and (abs(z - self.checkpoints_pos[self.curr_checkpoint_idx][2])<=2)):
                 self.curr_checkpoint_idx -= 1
                 print("You passed a checkpoint, GOOD JOB!")
-         
-         
-         
 
 class Timer():
     def __init__(self):
@@ -80,9 +78,6 @@ class Judge(Node):
             "lap2_time": None,
             "time_of_submission": None
         }
-
-
-
 
     def callback(self,msg:Odometry):
         x=msg.pose.pose.position.x
