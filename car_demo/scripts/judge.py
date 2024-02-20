@@ -96,7 +96,7 @@ class Judge(Node):
               (abs(z-self.final_pos['z'])<=1) and
                 abs(x-self.final_pos['x'])<=6)) and self.lap_completed < 2:
             
-            print("You finished your race!!!!!")
+            self.get_logger().info(str("You finished your race!!!!!"))
             self.lapTime[self.lap_completed] = self.timer.stop_timer()
             self.lap_completed += 1
             if self.lap_completed == 1 :
@@ -118,7 +118,8 @@ class Judge(Node):
                 self.submission_data["time_of_submission"] = time.strftime("%Y-%m-%d %H:%M:%S")
                 # Convert submission data to JSON format
                 submission_json = json.dumps(self.submission_data)
-                print(submission_json)
+                self.get_logger().info(str(submission_json))
+                despawn_prius.despawn()
                 self.destroy_node()
                 rclpy.shutdown()
 
