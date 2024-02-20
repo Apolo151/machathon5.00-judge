@@ -5,9 +5,8 @@ Script used to spawn a prius in a generic position
 """
 
 import rclpy
-from ament_index_python.packages import get_package_share_directory
 from gazebo_msgs.srv import SpawnEntity
-
+from ament_index_python.packages import get_package_share_directory
 
 def spawn(x,y,z,x_angle,y_angle,z_angle):
     node = rclpy.create_node("entity_spawner")
@@ -21,7 +20,10 @@ def spawn(x,y,z,x_angle,y_angle,z_angle):
         node.get_logger().info("...connected!")
 
     # Get path to the prius 
-    sdf_file_path = "../../prius_description/urdf/prius.urdf"
+    package_share_directory = get_package_share_directory('prius_description')
+    sdf_file_path = package_share_directory + "/urdf/prius.urdf"
+    # print(package_share_directory)
+    # sdf_file_path = "../../prius_description/urdf/prius.urdf"
 
     # Set data for request
     request = SpawnEntity.Request()

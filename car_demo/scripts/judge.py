@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
@@ -9,6 +10,8 @@ import time
 import sys
 
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
+CHECKPOINTS_LIST = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
+
 # TODO: add submission JSON
 
 # TODO: send request to API
@@ -17,8 +20,7 @@ class Checkpoints():
     def __init__(self):
         self.checkpoints_passed = [False] * 3
         self.curr_checkpoint_idx = 0
-        # TODO: remove hardcoded values
-        self.checkpoints_pos = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
+        self.checkpoints_pos = CHECKPOINTS_LIST
 
     def checkPassedCheckpoints(self, x, y, z,lap_completed):    
      if lap_completed == 0 :
@@ -36,9 +38,6 @@ class Checkpoints():
                 and (abs(z - self.checkpoints_pos[self.curr_checkpoint_idx][2])<=2)):
                 self.curr_checkpoint_idx -= 1
                 print("You passed a checkpoint, GOOD JOB!")
-         
-         
-         
 
 class Timer():
     def __init__(self):
@@ -80,9 +79,6 @@ class Judge(Node):
             "time_of_submission": None
         }
 
-
-
-
     def callback(self,msg:Odometry):
         x=msg.pose.pose.position.x
         y=msg.pose.pose.position.y
@@ -95,7 +91,7 @@ class Judge(Node):
               (abs(z-self.final_pos['z'])<=1) and
                 abs(x-self.final_pos['x'])<=6)) and self.lap_completed < 2:
             
-            print("You finished your race!!!!!")
+            self.get_logger().info(str("You finished your race!!!!!"))
             self.lapTime[self.lap_completed] = self.timer.stop_timer()
             self.lap_completed += 1
             if self.lap_completed == 1 :
@@ -117,7 +113,8 @@ class Judge(Node):
                 self.submission_data["time_of_submission"] = time.strftime("%Y-%m-%d %H:%M:%S")
                 # Convert submission data to JSON format
                 submission_json = json.dumps(self.submission_data)
-                print(submission_json)
+                self.get_logger().info(str(submission_json))
+                despawn_prius.despawn()
                 self.destroy_node()
                 rclpy.shutdown()
 

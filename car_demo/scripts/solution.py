@@ -22,7 +22,6 @@ class MyNode(Node):
 def main():
     rclpy.init()
 
-
     node = MyNode()
     rclpy.spin(node)
 
