@@ -113,6 +113,8 @@ class Judge(Node):
                 self.submission_data["time_of_submission"] = time.strftime("%Y-%m-%d %H:%M:%S")
                 # Convert submission data to JSON format
                 submission_json = json.dumps(self.submission_data)
+                if 
+                self.send_submission(self.submission_data)
                 self.get_logger().info(str(submission_json))
                 despawn_prius.despawn()
                 self.destroy_node()
