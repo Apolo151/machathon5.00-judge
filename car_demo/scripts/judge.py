@@ -7,15 +7,14 @@ import spawn_prius
 import despawn_prius
 import json
 import time
+import data
 import sys
 
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
 CHECKPOINTS_LIST = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
 
 # TODO: add submission JSON
-
 # TODO: send request to API
-
 class Checkpoints():
     def __init__(self):
         self.checkpoints_passed = [False] * 3
@@ -65,19 +64,21 @@ class Judge(Node):
         self.final_pos = {"x": FINAL_X,"y": FINAL_Y,"z": FINAL_Z}
         self.timer = Timer()
         self.checkpoints = Checkpoints()
+        self.data = data.Data()
         ####
         super().__init__("Judge")
         self.pose_subscriber = self.create_subscription(Odometry,"/prius/odom",self.callback,10)
         self.timer.start_timer()
-        #New Added By Jannah
         self.lap_completed = 0
         self.lapTime =[0,0]
+        ## TODO: change to use data object
         self.submission_data = {
-            "team_name": Team_Name,
-            "lap1_time": None,
-            "lap2_time": None,
-            "time_of_submission": None
+            "first_laptime": None,
+            "second_laptime": None
         }
+    
+    ## TODO: Implement
+    def send_submission(self, submission_data):
 
     def callback(self,msg:Odometry):
         x=msg.pose.pose.position.x
@@ -105,14 +106,13 @@ class Judge(Node):
                 self.timer.start_timer()
                 self.checkpoints.curr_checkpoint_idx -=1
 
-
-
             if self.lap_completed == 2:
                 self.submission_data["lap1_time"] = self.lapTime[0]
                 self.submission_data["lap2_time"] = self.lapTime[1]
                 self.submission_data["time_of_submission"] = time.strftime("%Y-%m-%d %H:%M:%S")
                 # Convert submission data to JSON format
                 submission_json = json.dumps(self.submission_data)
+                ### if submit is True
                 if 
                 self.send_submission(self.submission_data)
                 self.get_logger().info(str(submission_json))
