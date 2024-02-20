@@ -8,11 +8,12 @@ import despawn_prius
 import json
 import time
 import data
+import requests
 import sys
 
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
 CHECKPOINTS_LIST = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
-
+API_URL = 'https://comfortable-crab-pleat.cyclic.app/scores'
 # TODO: add submission JSON
 # TODO: send request to API
 class Checkpoints():
@@ -79,11 +80,19 @@ class Judge(Node):
             "first_laptime": None,
             "second_laptime": None
         }
+        self.submission_json = None
     
     ## TODO: Implement
     def send_submission(self, submission_data):
-        
-        pass
+        try:
+            requests.post(API_URL,self.submission_json)
+            requests.Response.raise_for_status() 
+            print("Submission sent successfully")
+        except requests.exceptions.RequestException as e:
+            print("Submission sending failed:", e)
+            print("Check your connection")
+            
+
     def callback(self,msg:Odometry):
         x=msg.pose.pose.position.x
         y=msg.pose.pose.position.y
