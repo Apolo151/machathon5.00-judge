@@ -73,13 +73,17 @@ class Judge(Node):
         self.lapTime =[0,0]
         ## TODO: change to use data object
         self.submission_data = {
+            "team_name": self.data.team_name,
+            "team_code":self.data.team_code,
+            "team_solution": self.data.solution,
             "first_laptime": None,
             "second_laptime": None
         }
     
     ## TODO: Implement
     def send_submission(self, submission_data):
-
+        
+        pass
     def callback(self,msg:Odometry):
         x=msg.pose.pose.position.x
         y=msg.pose.pose.position.y
@@ -107,18 +111,17 @@ class Judge(Node):
                 self.checkpoints.curr_checkpoint_idx -=1
 
             if self.lap_completed == 2:
-                self.submission_data["lap1_time"] = self.lapTime[0]
-                self.submission_data["lap2_time"] = self.lapTime[1]
-                self.submission_data["time_of_submission"] = time.strftime("%Y-%m-%d %H:%M:%S")
+                self.submission_data["first_laptime"] = self.lapTime[0]
+                self.submission_data["second_laptime"] = self.lapTime[1]
                 # Convert submission data to JSON format
                 submission_json = json.dumps(self.submission_data)
                 ### if submit is True
-                if 
-                self.send_submission(self.submission_data)
-                self.get_logger().info(str(submission_json))
-                despawn_prius.despawn()
-                self.destroy_node()
-                rclpy.shutdown()
+                if self.data.submit_choice == True :
+                    self.send_submission(self.submission_data)
+                    self.get_logger().info(str(submission_json))
+                    despawn_prius.despawn()
+                    self.destroy_node()
+                    rclpy.shutdown()
 
 
 
