@@ -86,11 +86,12 @@ class Judge(Node):
     def send_submission(self, submission_data):
         try:
             requests.post(API_URL,self.submission_json)
-            requests.Response.raise_for_status() 
-            print("Submission sent successfully")
+            requests.Response.raise_for_status()
+            self.get_logger().info(str("Submission sent successfully"))
         except requests.exceptions.RequestException as e:
-            print("Submission sending failed:", e)
+            self.get_logger().info(str("Submission sending faild: {}".format(e)))
             print("Check your connection")
+            self.get_logger().info(str("Check your connection"))
             
 
     def callback(self,msg:Odometry):

@@ -1,0 +1,205 @@
+[0.057s] Invoking command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/abdallah/Projects/ros2_ws/src/machathon5.00/prius_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs
+[0.199s] -- The C compiler identification is GNU 11.4.0
+[0.286s] -- The CXX compiler identification is GNU 11.4.0
+[0.297s] -- Detecting C compiler ABI info
+[0.376s] -- Detecting C compiler ABI info - done
+[0.383s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.386s] -- Detecting C compile features
+[0.386s] -- Detecting C compile features - done
+[0.390s] -- Detecting CXX compiler ABI info
+[0.475s] -- Detecting CXX compiler ABI info - done
+[0.484s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.484s] -- Detecting CXX compile features
+[0.485s] -- Detecting CXX compile features - done
+[0.491s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.654s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.713s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.749s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.795s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.802s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.814s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.832s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.856s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.879s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.891s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[1.211s] -- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[1.215s] -- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[1.219s] -- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[1.223s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.584s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.722s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.746s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.748s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.778s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.778s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.778s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.778s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.798s] -- Found PythonExtra: .so  
+[1.851s] -- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.854s] -- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.867s] -- Configuring done
+[1.918s] -- Generating done
+[1.921s] -- Build files have been written to: /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs
+[1.928s] Invoked command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/abdallah/Projects/ros2_ws/src/machathon5.00/prius_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs
+[1.929s] Invoking command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs -- -j12 -l12
+[1.970s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.981s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.990s] [  6%] Built target ament_cmake_python_symlink_prius_msgs
+[2.208s] running egg_info
+[2.209s] creating prius_msgs.egg-info
+[2.209s] writing prius_msgs.egg-info/PKG-INFO
+[2.209s] writing dependency_links to prius_msgs.egg-info/dependency_links.txt
+[2.209s] writing top-level names to prius_msgs.egg-info/top_level.txt
+[2.212s] writing manifest file 'prius_msgs.egg-info/SOURCES.txt'
+[2.214s] reading manifest file 'prius_msgs.egg-info/SOURCES.txt'
+[2.214s] writing manifest file 'prius_msgs.egg-info/SOURCES.txt'
+[2.238s] [  6%] Built target prius_msgs__cpp
+[2.241s] [  9%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_generator_c.dir/rosidl_generator_c/prius_msgs/msg/detail/control__functions.c.o[0m
+[2.250s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.250s] [ 19%] Built target ament_cmake_python_build_prius_msgs_egg
+[2.250s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.250s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.313s] [ 22%] [32m[1mLinking C shared library libprius_msgs__rosidl_generator_c.so[0m
+[2.353s] [ 22%] Built target prius_msgs__rosidl_generator_c
+[2.364s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.364s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.367s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.482s] [ 35%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/prius_msgs/msg/control__type_support.cpp.o[0m
+[2.515s] [ 38%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/prius_msgs/msg/detail/dds_fastrtps/control__type_support.cpp.o[0m
+[2.520s] [ 41%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/prius_msgs/msg/detail/control__type_support.cpp.o[0m
+[2.640s] [ 45%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/prius_msgs/msg/detail/control__type_support_c.cpp.o[0m
+[2.649s] [ 48%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/prius_msgs/msg/control__type_support.cpp.o[0m
+[2.651s] [ 51%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/prius_msgs/msg/detail/control__type_support.c.o[0m
+[2.685s] [ 54%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_c.so[0m
+[2.692s] [ 58%] [32m[1mLinking C shared library libprius_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.732s] [ 58%] Built target prius_msgs__rosidl_typesupport_c
+[2.733s] [ 58%] Built target prius_msgs__rosidl_typesupport_introspection_c
+[2.822s] [ 61%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_cpp.so[0m
+[2.867s] [ 61%] Built target prius_msgs__rosidl_typesupport_cpp
+[2.875s] [ 64%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.920s] [ 67%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.937s] [ 70%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.950s] [ 70%] Built target prius_msgs__rosidl_typesupport_introspection_cpp
+[3.016s] [ 70%] Built target prius_msgs__rosidl_typesupport_fastrtps_cpp
+[3.030s] [ 70%] Built target prius_msgs__rosidl_typesupport_fastrtps_c
+[3.051s] [ 70%] Built target prius_msgs
+[3.073s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.387s] [ 74%] Built target prius_msgs__py
+[3.409s] [ 77%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_generator_py.dir/rosidl_generator_py/prius_msgs/msg/_control_s.c.o[0m
+[3.524s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/prius_msgs/libprius_msgs__rosidl_generator_py.so[0m
+[3.565s] [ 80%] Built target prius_msgs__rosidl_generator_py
+[3.587s] [ 90%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.587s] [ 90%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[3.587s] [ 90%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.684s] [100%] [32m[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.684s] [100%] [32m[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.684s] [100%] [32m[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.725s] [100%] Built target prius_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.725s] [100%] Built target prius_msgs__rosidl_typesupport_introspection_c__pyext
+[3.725s] [100%] Built target prius_msgs__rosidl_typesupport_c__pyext
+[3.738s] Invoked command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs -- -j12 -l12
+[3.803s] Invoking command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs
+[3.811s] -- Install configuration: ""
+[3.811s] -- Execute custom install script
+[3.812s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/ament_index/resource_index/rosidl_interfaces/prius_msgs
+[3.822s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/control.h
+[3.831s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__functions.h
+[3.841s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__struct.h
+[3.851s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__type_support.h
+[3.860s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.871s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/library_path.sh
+[3.880s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/library_path.dsv
+[3.890s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_fastrtps_c.h
+[3.899s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.909s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/control.hpp
+[3.918s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__builder.hpp
+[3.928s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__struct.hpp
+[3.937s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__traits.hpp
+[3.947s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_fastrtps_cpp.hpp
+[3.956s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.966s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_introspection_c.h
+[3.976s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.985s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_introspection_cpp.hpp
+[3.995s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/pythonpath.sh
+[4.005s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/pythonpath.dsv
+[4.015s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/PKG-INFO
+[4.024s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/SOURCES.txt
+[4.034s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/dependency_links.txt
+[4.044s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/top_level.txt
+[4.053s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/__init__.py
+[4.063s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_c.c
+[4.073s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.082s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[4.092s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/libprius_msgs__rosidl_generator_py.so
+[4.102s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/__init__.py
+[4.112s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control.py
+[4.121s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control_s.c
+[4.131s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.140s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.150s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.159s] -- Up-to-date symlink: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.159s] -- Up-to-date symlink: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.160s] -- Up-to-date symlink: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.160s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/msg/Control.idl
+[4.170s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/msg/Control.msg
+[4.180s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/ament_index/resource_index/package_run_dependencies/prius_msgs
+[4.189s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/ament_index/resource_index/parent_prefix_path/prius_msgs
+[4.199s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/ament_prefix_path.sh
+[4.209s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/ament_prefix_path.dsv
+[4.218s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/path.sh
+[4.228s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/path.dsv
+[4.237s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/local_setup.bash
+[4.247s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/local_setup.sh
+[4.256s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/local_setup.zsh
+[4.266s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/local_setup.dsv
+[4.276s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/package.dsv
+[4.285s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/ament_index/resource_index/packages/prius_msgs
+[4.295s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake-extras.cmake
+[4.304s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.314s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.323s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.333s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.343s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.352s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.362s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgsConfig.cmake
+[4.372s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgsConfig-version.cmake
+[4.382s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/package.xml
+[4.391s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_generator_c.so
+[4.391s] -- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_generator_c.so" to ""
+[4.391s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_c.so
+[4.392s] -- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[4.392s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.392s] -- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.392s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_c.so
+[4.393s] -- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_c.so" to ""
+[4.393s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_c.so
+[4.393s] -- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_c.so" to ""
+[4.393s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_cpp.so
+[4.394s] -- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[4.394s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_cpp.so
+[4.394s] -- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_cpp.so" to ""
+[4.425s] Listing '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs'...
+[4.425s] Compiling '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/__init__.py'...
+[4.425s] Listing '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg'...
+[4.425s] Compiling '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/__init__.py'...
+[4.426s] Compiling '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control.py'...
+[4.429s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_generator_py.so
+[4.430s] -- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_generator_py.so" to ""
+[4.430s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cExport.cmake
+[4.430s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cExport-noconfig.cmake
+[4.430s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[4.431s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.431s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cppExport.cmake
+[4.431s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.431s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.431s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.431s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.431s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cExport.cmake
+[4.432s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[4.432s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.432s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.432s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cppExport.cmake
+[4.432s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[4.432s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_pyExport.cmake
+[4.433s] -- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_pyExport-noconfig.cmake
+[4.435s] Invoked command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs

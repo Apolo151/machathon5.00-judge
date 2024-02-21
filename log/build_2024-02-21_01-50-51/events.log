@@ -1,0 +1,785 @@
+[0.000000] (-) TimerEvent: {}
+[0.000401] (prius_description) JobQueued: {'identifier': 'prius_description', 'dependencies': OrderedDict()}
+[0.000551] (prius_msgs) JobQueued: {'identifier': 'prius_msgs', 'dependencies': OrderedDict()}
+[0.000569] (car_demo) JobQueued: {'identifier': 'car_demo', 'dependencies': OrderedDict([('prius_description', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description'), ('prius_msgs', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs')])}
+[0.000588] (prius_description) JobStarted: {'identifier': 'prius_description'}
+[0.065010] (prius_msgs) JobStarted: {'identifier': 'prius_msgs'}
+[0.099825] (-) TimerEvent: {}
+[0.114369] (prius_description) JobProgress: {'identifier': 'prius_description', 'progress': 'cmake'}
+[0.114633] (prius_description) Command: {'cmd': ['/usr/bin/cmake', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/prius_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description'], 'cwd': '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abdallah'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/lib:/home/abdallah/Projects/ros2_ws/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abdallah'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/abdallah/.nix-profile'), ('MANAGERPID', '2161'), ('SYSTEMD_EXEC_PID', '2599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7730'), ('NVM_DIR', '/home/abdallah/.nvm'), ('COLCON_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abdallah'), ('JOURNAL_STREAM', '8:33406'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abdallah'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/abdallah/miniconda3/condabin:/opt/ros/humble/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/python3:/snap/bin:/home/abdallah/.dotnet/tools:/usr/local/go/bin:/home/abdallah/go/bin'), ('SESSION_MANAGER', 'local/abdallah-desktop:@/tmp/.ICE-unix/2447,unix/abdallah-desktop:/tmp/.ICE-unix/2447'), ('INVOCATION_ID', '77f864b5db3a473584a11ed23fa16daa'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/abdallah/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/abdallah/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65598595-343e-4a58-89a7-852e87183c3c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/abdallah/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/prius_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble')]), 'shell': False}
+[0.120127] (prius_msgs) JobProgress: {'identifier': 'prius_msgs', 'progress': 'cmake'}
+[0.120422] (prius_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/prius_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs'], 'cwd': '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abdallah'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/lib:/home/abdallah/Projects/ros2_ws/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abdallah'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/abdallah/.nix-profile'), ('MANAGERPID', '2161'), ('SYSTEMD_EXEC_PID', '2599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7730'), ('NVM_DIR', '/home/abdallah/.nvm'), ('COLCON_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abdallah'), ('JOURNAL_STREAM', '8:33406'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abdallah'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/abdallah/miniconda3/condabin:/opt/ros/humble/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/python3:/snap/bin:/home/abdallah/.dotnet/tools:/usr/local/go/bin:/home/abdallah/go/bin'), ('SESSION_MANAGER', 'local/abdallah-desktop:@/tmp/.ICE-unix/2447,unix/abdallah-desktop:/tmp/.ICE-unix/2447'), ('INVOCATION_ID', '77f864b5db3a473584a11ed23fa16daa'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/abdallah/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/abdallah/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65598595-343e-4a58-89a7-852e87183c3c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/abdallah/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/prius_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble')]), 'shell': False}
+[0.199915] (-) TimerEvent: {}
+[0.262544] (prius_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.264357] (prius_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300015] (-) TimerEvent: {}
+[0.350937] (prius_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.351214] (prius_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.362129] (prius_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.362279] (prius_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400151] (-) TimerEvent: {}
+[0.440993] (prius_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.441151] (prius_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.447829] (prius_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.447971] (prius_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.450910] (prius_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.451042] (prius_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.451401] (prius_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.451468] (prius_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.454542] (prius_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.454726] (prius_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500231] (-) TimerEvent: {}
+[0.539698] (prius_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.542054] (prius_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.549270] (prius_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.549521] (prius_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.550062] (prius_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.552009] (prius_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.552212] (prius_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.552519] (prius_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.555549] (prius_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.555702] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600322] (-) TimerEvent: {}
+[0.700568] (-) TimerEvent: {}
+[0.717174] (prius_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.718817] (prius_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.773788] (prius_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.777514] (prius_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.800682] (-) TimerEvent: {}
+[0.814412] (prius_description) StdoutLine: {'line': b'-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)\n'}
+[0.814580] (prius_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.859695] (prius_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.866980] (prius_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.878593] (prius_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.895215] (prius_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.897167] (prius_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.898322] (prius_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.899205] (prius_description) StdoutLine: {'line': b'-- Build files have been written to: /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description\n'}
+[0.900731] (-) TimerEvent: {}
+[0.904057] (prius_description) CommandEnded: {'returncode': 0}
+[0.904725] (prius_description) JobProgress: {'identifier': 'prius_description', 'progress': 'build'}
+[0.905416] (prius_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description', '--', '-j12', '-l12'], 'cwd': '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abdallah'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/lib:/home/abdallah/Projects/ros2_ws/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abdallah'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/abdallah/.nix-profile'), ('MANAGERPID', '2161'), ('SYSTEMD_EXEC_PID', '2599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7730'), ('NVM_DIR', '/home/abdallah/.nvm'), ('COLCON_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abdallah'), ('JOURNAL_STREAM', '8:33406'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abdallah'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/abdallah/miniconda3/condabin:/opt/ros/humble/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/python3:/snap/bin:/home/abdallah/.dotnet/tools:/usr/local/go/bin:/home/abdallah/go/bin'), ('SESSION_MANAGER', 'local/abdallah-desktop:@/tmp/.ICE-unix/2447,unix/abdallah-desktop:/tmp/.ICE-unix/2447'), ('INVOCATION_ID', '77f864b5db3a473584a11ed23fa16daa'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/abdallah/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/abdallah/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65598595-343e-4a58-89a7-852e87183c3c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/abdallah/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/prius_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble')]), 'shell': False}
+[0.921182] (prius_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.943524] (prius_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.951881] (prius_description) CommandEnded: {'returncode': 0}
+[0.956308] (prius_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.978714] (prius_description) JobProgress: {'identifier': 'prius_description', 'progress': 'install'}
+[0.989261] (prius_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description'], 'cwd': '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abdallah'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/lib:/home/abdallah/Projects/ros2_ws/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abdallah'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/abdallah/.nix-profile'), ('MANAGERPID', '2161'), ('SYSTEMD_EXEC_PID', '2599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7730'), ('NVM_DIR', '/home/abdallah/.nvm'), ('COLCON_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abdallah'), ('JOURNAL_STREAM', '8:33406'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abdallah'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/abdallah/miniconda3/condabin:/opt/ros/humble/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/python3:/snap/bin:/home/abdallah/.dotnet/tools:/usr/local/go/bin:/home/abdallah/go/bin'), ('SESSION_MANAGER', 'local/abdallah-desktop:@/tmp/.ICE-unix/2447,unix/abdallah-desktop:/tmp/.ICE-unix/2447'), ('INVOCATION_ID', '77f864b5db3a473584a11ed23fa16daa'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/abdallah/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/abdallah/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65598595-343e-4a58-89a7-852e87183c3c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/abdallah/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/prius_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble')]), 'shell': False}
+[0.999341] (prius_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.999738] (prius_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.000020] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/environment/gazebo_envs.sh\n'}
+[1.000814] (-) TimerEvent: {}
+[1.011822] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/Hybrid.png\n'}
+[1.023526] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/Hybrid_Interior.png\n'}
+[1.035446] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/Wheels3.png\n'}
+[1.047330] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/hybrid_body.mtl\n'}
+[1.058446] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/hybrid_body.obj\n'}
+[1.069233] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/model.config\n'}
+[1.080228] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/steering_wheel.mtl\n'}
+[1.090943] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/steering_wheel.obj\n'}
+[1.100970] (-) TimerEvent: {}
+[1.102214] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/wheel.mtl\n'}
+[1.113331] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/meshes/wheel.obj\n'}
+[1.124198] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/urdf/prius.urdf\n'}
+[1.134605] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/model.config\n'}
+[1.146745] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/ament_index/resource_index/package_run_dependencies/prius_description\n'}
+[1.157379] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/ament_index/resource_index/parent_prefix_path/prius_description\n'}
+[1.167309] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/environment/ament_prefix_path.sh\n'}
+[1.178302] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/environment/ament_prefix_path.dsv\n'}
+[1.189608] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/environment/path.sh\n'}
+[1.201080] (-) TimerEvent: {}
+[1.201392] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/environment/path.dsv\n'}
+[1.212834] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/local_setup.bash\n'}
+[1.224789] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/local_setup.sh\n'}
+[1.236523] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/local_setup.zsh\n'}
+[1.249566] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/local_setup.dsv\n'}
+[1.261760] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/package.dsv\n'}
+[1.273987] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/ament_index/resource_index/packages/prius_description\n'}
+[1.276413] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[1.279697] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[1.283841] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[1.286083] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/cmake/prius_descriptionConfig.cmake\n'}
+[1.288343] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.296679] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/cmake/prius_descriptionConfig-version.cmake\n'}
+[1.301166] (-) TimerEvent: {}
+[1.307203] (prius_description) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/package.xml\n'}
+[1.320098] (prius_description) CommandEnded: {'returncode': 0}
+[1.401264] (-) TimerEvent: {}
+[1.452311] (prius_description) JobEnded: {'identifier': 'prius_description', 'rc': 0}
+[1.501358] (-) TimerEvent: {}
+[1.601608] (-) TimerEvent: {}
+[1.648929] (prius_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.701698] (-) TimerEvent: {}
+[1.787263] (prius_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.801804] (-) TimerEvent: {}
+[1.811371] (prius_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.813505] (prius_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.842938] (prius_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.843111] (prius_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.843166] (prius_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.843215] (prius_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.862554] (prius_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.901898] (-) TimerEvent: {}
+[1.916004] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[1.918819] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[1.931922] (prius_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.982841] (prius_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.985776] (prius_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs\n'}
+[1.992615] (prius_msgs) CommandEnded: {'returncode': 0}
+[1.993127] (prius_msgs) JobProgress: {'identifier': 'prius_msgs', 'progress': 'build'}
+[1.993464] (prius_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs', '--', '-j12', '-l12'], 'cwd': '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abdallah'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/lib:/home/abdallah/Projects/ros2_ws/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abdallah'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/abdallah/.nix-profile'), ('MANAGERPID', '2161'), ('SYSTEMD_EXEC_PID', '2599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7730'), ('NVM_DIR', '/home/abdallah/.nvm'), ('COLCON_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abdallah'), ('JOURNAL_STREAM', '8:33406'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abdallah'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/abdallah/miniconda3/condabin:/opt/ros/humble/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/python3:/snap/bin:/home/abdallah/.dotnet/tools:/usr/local/go/bin:/home/abdallah/go/bin'), ('SESSION_MANAGER', 'local/abdallah-desktop:@/tmp/.ICE-unix/2447,unix/abdallah-desktop:/tmp/.ICE-unix/2447'), ('INVOCATION_ID', '77f864b5db3a473584a11ed23fa16daa'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/abdallah/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/abdallah/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65598595-343e-4a58-89a7-852e87183c3c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/abdallah/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/prius_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble')]), 'shell': False}
+[2.001989] (-) TimerEvent: {}
+[2.035162] (prius_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.045937] (prius_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.055348] (prius_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_symlink_prius_msgs\n'}
+[2.102077] (-) TimerEvent: {}
+[2.202316] (-) TimerEvent: {}
+[2.273083] (prius_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.273794] (prius_msgs) StdoutLine: {'line': b'creating prius_msgs.egg-info\n'}
+[2.274045] (prius_msgs) StdoutLine: {'line': b'writing prius_msgs.egg-info/PKG-INFO\n'}
+[2.274280] (prius_msgs) StdoutLine: {'line': b'writing dependency_links to prius_msgs.egg-info/dependency_links.txt\n'}
+[2.274459] (prius_msgs) StdoutLine: {'line': b'writing top-level names to prius_msgs.egg-info/top_level.txt\n'}
+[2.276579] (prius_msgs) StdoutLine: {'line': b"writing manifest file 'prius_msgs.egg-info/SOURCES.txt'\n"}
+[2.279083] (prius_msgs) StdoutLine: {'line': b"reading manifest file 'prius_msgs.egg-info/SOURCES.txt'\n"}
+[2.279506] (prius_msgs) StdoutLine: {'line': b"writing manifest file 'prius_msgs.egg-info/SOURCES.txt'\n"}
+[2.302425] (-) TimerEvent: {}
+[2.302883] (prius_msgs) StdoutLine: {'line': b'[  6%] Built target prius_msgs__cpp\n'}
+[2.306063] (prius_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_generator_c.dir/rosidl_generator_c/prius_msgs/msg/detail/control__functions.c.o\x1b[0m\n'}
+[2.314827] (prius_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.315025] (prius_msgs) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_prius_msgs_egg\n'}
+[2.315097] (prius_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.315158] (prius_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.378098] (prius_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libprius_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.402532] (-) TimerEvent: {}
+[2.417986] (prius_msgs) StdoutLine: {'line': b'[ 22%] Built target prius_msgs__rosidl_generator_c\n'}
+[2.429319] (prius_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.429567] (prius_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.432307] (prius_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.502634] (-) TimerEvent: {}
+[2.546793] (prius_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/prius_msgs/msg/control__type_support.cpp.o\x1b[0m\n'}
+[2.580270] (prius_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/prius_msgs/msg/detail/dds_fastrtps/control__type_support.cpp.o\x1b[0m\n'}
+[2.584720] (prius_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/prius_msgs/msg/detail/control__type_support.cpp.o\x1b[0m\n'}
+[2.602719] (-) TimerEvent: {}
+[2.702992] (-) TimerEvent: {}
+[2.705337] (prius_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/prius_msgs/msg/detail/control__type_support_c.cpp.o\x1b[0m\n'}
+[2.713569] (prius_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/prius_msgs/msg/control__type_support.cpp.o\x1b[0m\n'}
+[2.715651] (prius_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/prius_msgs/msg/detail/control__type_support.c.o\x1b[0m\n'}
+[2.750175] (prius_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.757204] (prius_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libprius_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.797275] (prius_msgs) StdoutLine: {'line': b'[ 58%] Built target prius_msgs__rosidl_typesupport_c\n'}
+[2.797932] (prius_msgs) StdoutLine: {'line': b'[ 58%] Built target prius_msgs__rosidl_typesupport_introspection_c\n'}
+[2.803099] (-) TimerEvent: {}
+[2.887059] (prius_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.903207] (-) TimerEvent: {}
+[2.932358] (prius_msgs) StdoutLine: {'line': b'[ 61%] Built target prius_msgs__rosidl_typesupport_cpp\n'}
+[2.939921] (prius_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.984546] (prius_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.001728] (prius_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.003294] (-) TimerEvent: {}
+[3.014810] (prius_msgs) StdoutLine: {'line': b'[ 70%] Built target prius_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.080856] (prius_msgs) StdoutLine: {'line': b'[ 70%] Built target prius_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.094731] (prius_msgs) StdoutLine: {'line': b'[ 70%] Built target prius_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.103387] (-) TimerEvent: {}
+[3.116120] (prius_msgs) StdoutLine: {'line': b'[ 70%] Built target prius_msgs\n'}
+[3.138271] (prius_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.203475] (-) TimerEvent: {}
+[3.303760] (-) TimerEvent: {}
+[3.404009] (-) TimerEvent: {}
+[3.451551] (prius_msgs) StdoutLine: {'line': b'[ 74%] Built target prius_msgs__py\n'}
+[3.473728] (prius_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_generator_py.dir/rosidl_generator_py/prius_msgs/msg/_control_s.c.o\x1b[0m\n'}
+[3.504108] (-) TimerEvent: {}
+[3.588917] (prius_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/prius_msgs/libprius_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[3.604200] (-) TimerEvent: {}
+[3.629603] (prius_msgs) StdoutLine: {'line': b'[ 80%] Built target prius_msgs__rosidl_generator_py\n'}
+[3.652310] (prius_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.652465] (prius_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.652522] (prius_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.704306] (-) TimerEvent: {}
+[3.749230] (prius_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.749440] (prius_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.749500] (prius_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.789856] (prius_msgs) StdoutLine: {'line': b'[100%] Built target prius_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.790012] (prius_msgs) StdoutLine: {'line': b'[100%] Built target prius_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.790066] (prius_msgs) StdoutLine: {'line': b'[100%] Built target prius_msgs__rosidl_typesupport_c__pyext\n'}
+[3.803287] (prius_msgs) CommandEnded: {'returncode': 0}
+[3.804473] (-) TimerEvent: {}
+[3.867313] (prius_msgs) JobProgress: {'identifier': 'prius_msgs', 'progress': 'install'}
+[3.867698] (prius_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs'], 'cwd': '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abdallah'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/lib:/home/abdallah/Projects/ros2_ws/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abdallah'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/abdallah/.nix-profile'), ('MANAGERPID', '2161'), ('SYSTEMD_EXEC_PID', '2599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7730'), ('NVM_DIR', '/home/abdallah/.nvm'), ('COLCON_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abdallah'), ('JOURNAL_STREAM', '8:33406'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abdallah'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/abdallah/miniconda3/condabin:/opt/ros/humble/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/python3:/snap/bin:/home/abdallah/.dotnet/tools:/usr/local/go/bin:/home/abdallah/go/bin'), ('SESSION_MANAGER', 'local/abdallah-desktop:@/tmp/.ICE-unix/2447,unix/abdallah-desktop:/tmp/.ICE-unix/2447'), ('INVOCATION_ID', '77f864b5db3a473584a11ed23fa16daa'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/abdallah/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/abdallah/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65598595-343e-4a58-89a7-852e87183c3c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/abdallah/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/home/abdallah/Projects/ros2_ws/install/car_demo/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/prius_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble')]), 'shell': False}
+[3.875945] (prius_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.876451] (prius_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.876756] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/ament_index/resource_index/rosidl_interfaces/prius_msgs\n'}
+[3.886730] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/control.h\n'}
+[3.896410] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__functions.h\n'}
+[3.904567] (-) TimerEvent: {}
+[3.906417] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__struct.h\n'}
+[3.915742] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__type_support.h\n'}
+[3.924996] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.935526] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/library_path.sh\n'}
+[3.944986] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/library_path.dsv\n'}
+[3.954641] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_fastrtps_c.h\n'}
+[3.964028] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.973963] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/control.hpp\n'}
+[3.983313] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__builder.hpp\n'}
+[3.992577] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__struct.hpp\n'}
+[4.001975] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__traits.hpp\n'}
+[4.004627] (-) TimerEvent: {}
+[4.012153] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.021473] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.031077] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_introspection_c.h\n'}
+[4.040943] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.050537] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.060359] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/pythonpath.sh\n'}
+[4.070085] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/pythonpath.dsv\n'}
+[4.079791] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[4.089164] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[4.098604] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[4.104709] (-) TimerEvent: {}
+[4.108739] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[4.118543] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/__init__.py\n'}
+[4.127824] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[4.138127] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.147385] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.157121] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/libprius_msgs__rosidl_generator_py.so\n'}
+[4.166882] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/__init__.py\n'}
+[4.176663] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control.py\n'}
+[4.186081] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control_s.c\n'}
+[4.195658] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.204813] (-) TimerEvent: {}
+[4.205350] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.214616] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.224341] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.224513] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.224739] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.224934] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/msg/Control.idl\n'}
+[4.234845] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/msg/Control.msg\n'}
+[4.244910] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/ament_index/resource_index/package_run_dependencies/prius_msgs\n'}
+[4.254372] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/ament_index/resource_index/parent_prefix_path/prius_msgs\n'}
+[4.263784] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/ament_prefix_path.sh\n'}
+[4.273613] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/ament_prefix_path.dsv\n'}
+[4.283169] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/path.sh\n'}
+[4.292584] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/environment/path.dsv\n'}
+[4.302494] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/local_setup.bash\n'}
+[4.304896] (-) TimerEvent: {}
+[4.311909] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/local_setup.sh\n'}
+[4.321375] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/local_setup.zsh\n'}
+[4.331305] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/local_setup.dsv\n'}
+[4.340786] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/package.dsv\n'}
+[4.350308] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/ament_index/resource_index/packages/prius_msgs\n'}
+[4.359818] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.369435] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.378912] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.388368] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.398160] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.404997] (-) TimerEvent: {}
+[4.408018] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.417465] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.426915] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgsConfig.cmake\n'}
+[4.436887] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgsConfig-version.cmake\n'}
+[4.446383] (prius_msgs) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/package.xml\n'}
+[4.455909] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_generator_c.so\n'}
+[4.456405] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_generator_c.so" to ""\n'}
+[4.456495] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.456844] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.456936] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.457289] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.457379] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.457710] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.457797] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_c.so\n'}
+[4.458089] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_c.so" to ""\n'}
+[4.458179] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.458621] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.458711] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_cpp.so\n'}
+[4.459054] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.490341] (prius_msgs) StdoutLine: {'line': b"Listing '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs'...\n"}
+[4.490494] (prius_msgs) StdoutLine: {'line': b"Compiling '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/__init__.py'...\n"}
+[4.490549] (prius_msgs) StdoutLine: {'line': b"Listing '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg'...\n"}
+[4.490598] (prius_msgs) StdoutLine: {'line': b"Compiling '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/__init__.py'...\n"}
+[4.490645] (prius_msgs) StdoutLine: {'line': b"Compiling '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control.py'...\n"}
+[4.494516] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_generator_py.so\n'}
+[4.495077] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib/libprius_msgs__rosidl_generator_py.so" to ""\n'}
+[4.495237] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cExport.cmake\n'}
+[4.495354] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.495515] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.495690] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.495853] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.496011] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.496159] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.496316] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.496465] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.496620] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.496777] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.496937] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.497085] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.497238] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.497391] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.497542] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_pyExport.cmake\n'}
+[4.497692] (prius_msgs) StdoutLine: {'line': b'-- Installing: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.500210] (prius_msgs) CommandEnded: {'returncode': 0}
+[4.505096] (-) TimerEvent: {}
+[4.605402] (-) TimerEvent: {}
+[4.678238] (prius_msgs) JobEnded: {'identifier': 'prius_msgs', 'rc': 0}
+[4.679006] (car_demo) JobStarted: {'identifier': 'car_demo'}
+[4.705520] (-) TimerEvent: {}
+[4.732563] (car_demo) JobProgress: {'identifier': 'car_demo', 'progress': 'cmake'}
+[4.732858] (car_demo) Command: {'cmd': ['/usr/bin/cmake', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo'], 'cwd': '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abdallah'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib:/home/abdallah/Projects/ros2_ws/install/car_demo/lib:/home/abdallah/Projects/ros2_ws/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abdallah'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/abdallah/.nix-profile'), ('MANAGERPID', '2161'), ('SYSTEMD_EXEC_PID', '2599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7730'), ('NVM_DIR', '/home/abdallah/.nvm'), ('COLCON_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abdallah'), ('JOURNAL_STREAM', '8:33406'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abdallah'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/models:/opt/ros/humble/share/prius_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/abdallah/miniconda3/condabin:/opt/ros/humble/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/python3:/snap/bin:/home/abdallah/.dotnet/tools:/usr/local/go/bin:/home/abdallah/go/bin'), ('SESSION_MANAGER', 'local/abdallah-desktop:@/tmp/.ICE-unix/2447,unix/abdallah-desktop:/tmp/.ICE-unix/2447'), ('INVOCATION_ID', '77f864b5db3a473584a11ed23fa16daa'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/abdallah/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/abdallah/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65598595-343e-4a58-89a7-852e87183c3c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/abdallah/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/car_demo/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/prius_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble')]), 'shell': False}
+[4.788285] (car_demo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[4.805628] (-) TimerEvent: {}
+[4.841329] (car_demo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.848310] (car_demo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.905729] (-) TimerEvent: {}
+[4.925876] (car_demo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.932804] (car_demo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.932988] (car_demo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.933296] (car_demo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.936325] (car_demo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.005825] (-) TimerEvent: {}
+[5.020962] (car_demo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.027630] (car_demo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.027791] (car_demo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.028149] (car_demo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.030763] (car_demo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.105921] (-) TimerEvent: {}
+[5.199936] (car_demo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[5.206081] (-) TimerEvent: {}
+[5.255189] (car_demo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.289946] (car_demo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.306134] (-) TimerEvent: {}
+[5.335440] (car_demo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.340695] (car_demo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.349209] (car_demo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.362663] (car_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.381212] (car_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.406241] (-) TimerEvent: {}
+[5.460173] (car_demo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.463707] (car_demo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.506336] (-) TimerEvent: {}
+[5.598907] (car_demo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.606433] (-) TimerEvent: {}
+[5.633067] (car_demo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.689607] (car_demo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.704300] (car_demo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.706503] (-) TimerEvent: {}
+[5.787976] (car_demo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.788221] (car_demo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.806597] (-) TimerEvent: {}
+[5.867322] (car_demo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.868316] (car_demo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.906691] (-) TimerEvent: {}
+[6.006940] (-) TimerEvent: {}
+[6.035207] (car_demo) StdoutLine: {'line': b'-- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[6.037494] (car_demo) StdoutLine: {'line': b'-- Found gazebo_dev: 3.7.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[6.046812] (car_demo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[6.048108] (car_demo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[6.064029] (car_demo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[6.107043] (-) TimerEvent: {}
+[6.205880] (car_demo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[6.207094] (-) TimerEvent: {}
+[6.272816] (car_demo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[6.301568] (car_demo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[6.307198] (-) TimerEvent: {}
+[6.333451] (car_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[6.354009] (car_demo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[6.360725] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.368936] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[6.370809] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[6.371177] (car_demo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[6.376842] (car_demo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[6.393274] (car_demo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[6.407296] (-) TimerEvent: {}
+[6.439859] (car_demo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[6.450421] (car_demo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[6.459977] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[6.468843] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[6.469116] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[6.481000] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[6.481180] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[6.492139] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[6.492294] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[6.500782] (car_demo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[6.501044] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[6.507418] (-) TimerEvent: {}
+[6.511060] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[6.511252] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[6.520163] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[6.607511] (-) TimerEvent: {}
+[6.646591] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.652284] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[6.652784] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[6.672946] (car_demo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[6.686187] (car_demo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[6.691538] (car_demo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[6.707618] (-) TimerEvent: {}
+[6.710686] (car_demo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[6.758497] (car_demo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[6.767274] (car_demo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[6.783828] (car_demo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[6.807711] (-) TimerEvent: {}
+[6.826117] (car_demo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[6.829821] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[6.830242] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[6.851805] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.857577] (car_demo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[6.874311] (car_demo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[6.907802] (-) TimerEvent: {}
+[6.919581] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[6.923024] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[6.923482] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[6.924057] (car_demo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[6.924871] (car_demo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[6.926029] (car_demo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[6.938492] (car_demo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[6.939031] (car_demo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[6.941930] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[6.942510] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[6.942807] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.947015] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[6.947392] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[7.007898] (-) TimerEvent: {}
+[7.046001] (car_demo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[7.056065] (car_demo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[7.072828] (car_demo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[7.107994] (-) TimerEvent: {}
+[7.115704] (car_demo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[7.125362] (car_demo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[7.150416] (car_demo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[7.203406] (car_demo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[7.203856] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[7.204295] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[7.204649] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[7.208084] (-) TimerEvent: {}
+[7.210330] (car_demo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[7.210610] (car_demo) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[7.227163] (car_demo) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[7.275298] (car_demo) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[7.308183] (-) TimerEvent: {}
+[7.408435] (-) TimerEvent: {}
+[7.508672] (-) TimerEvent: {}
+[7.523477] (car_demo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[7.531128] (car_demo) StdoutLine: {'line': b'-- Found prius_msgs: 0.0.1 (/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake)\n'}
+[7.582348] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[7.582833] (car_demo) StdoutLine: {'line': b'-- Found prius_description: 0.0.1 (/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/cmake)\n'}
+[7.608764] (-) TimerEvent: {}
+[7.688025] (car_demo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.708848] (-) TimerEvent: {}
+[7.744818] (car_demo) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.7 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[7.748086] (car_demo) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[7.772461] (car_demo) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.808969] (-) TimerEvent: {}
+[7.822622] (car_demo) StdoutLine: {'line': b'-- Generating done\n'}
+[7.827529] (car_demo) StdoutLine: {'line': b'-- Build files have been written to: /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo\n'}
+[7.848554] (car_demo) CommandEnded: {'returncode': 0}
+[7.849207] (car_demo) JobProgress: {'identifier': 'car_demo', 'progress': 'build'}
+[7.849695] (car_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo', '--', '-j12', '-l12'], 'cwd': '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abdallah'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib:/home/abdallah/Projects/ros2_ws/install/car_demo/lib:/home/abdallah/Projects/ros2_ws/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abdallah'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/abdallah/.nix-profile'), ('MANAGERPID', '2161'), ('SYSTEMD_EXEC_PID', '2599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7730'), ('NVM_DIR', '/home/abdallah/.nvm'), ('COLCON_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abdallah'), ('JOURNAL_STREAM', '8:33406'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abdallah'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/models:/opt/ros/humble/share/prius_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/abdallah/miniconda3/condabin:/opt/ros/humble/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/python3:/snap/bin:/home/abdallah/.dotnet/tools:/usr/local/go/bin:/home/abdallah/go/bin'), ('SESSION_MANAGER', 'local/abdallah-desktop:@/tmp/.ICE-unix/2447,unix/abdallah-desktop:/tmp/.ICE-unix/2447'), ('INVOCATION_ID', '77f864b5db3a473584a11ed23fa16daa'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/abdallah/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/abdallah/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65598595-343e-4a58-89a7-852e87183c3c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/abdallah/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/car_demo/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/prius_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble')]), 'shell': False}
+[7.908901] (car_demo) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[7.909087] (-) TimerEvent: {}
+[7.910691] (car_demo) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[7.912846] (car_demo) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.o\x1b[0m\n'}
+[7.918723] (car_demo) StdoutLine: {'line': b'[ 37%] Built target ament_cmake_python_symlink_car_demo\n'}
+[8.009188] (-) TimerEvent: {}
+[8.109430] (-) TimerEvent: {}
+[8.125500] (car_demo) StdoutLine: {'line': b'running egg_info\n'}
+[8.126101] (car_demo) StdoutLine: {'line': b'creating car_demo.egg-info\n'}
+[8.126269] (car_demo) StdoutLine: {'line': b'writing car_demo.egg-info/PKG-INFO\n'}
+[8.126417] (car_demo) StdoutLine: {'line': b'writing dependency_links to car_demo.egg-info/dependency_links.txt\n'}
+[8.126540] (car_demo) StdoutLine: {'line': b'writing top-level names to car_demo.egg-info/top_level.txt\n'}
+[8.128037] (car_demo) StdoutLine: {'line': b"writing manifest file 'car_demo.egg-info/SOURCES.txt'\n"}
+[8.130191] (car_demo) StdoutLine: {'line': b"reading manifest file 'car_demo.egg-info/SOURCES.txt'\n"}
+[8.130565] (car_demo) StdoutLine: {'line': b"writing manifest file 'car_demo.egg-info/SOURCES.txt'\n"}
+[8.166217] (car_demo) StdoutLine: {'line': b'[ 37%] Built target ament_cmake_python_build_car_demo_egg\n'}
+[8.209533] (-) TimerEvent: {}
+[8.309814] (-) TimerEvent: {}
+[8.410115] (-) TimerEvent: {}
+[8.429574] (car_demo) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[8.469624] (car_demo) StdoutLine: {'line': b'[ 50%] Built target gtest_main\n'}
+[8.510211] (-) TimerEvent: {}
+[8.610452] (-) TimerEvent: {}
+[8.710700] (-) TimerEvent: {}
+[8.810949] (-) TimerEvent: {}
+[8.911206] (-) TimerEvent: {}
+[9.011475] (-) TimerEvent: {}
+[9.111764] (-) TimerEvent: {}
+[9.212004] (-) TimerEvent: {}
+[9.312247] (-) TimerEvent: {}
+[9.412489] (-) TimerEvent: {}
+[9.512762] (-) TimerEvent: {}
+[9.613036] (-) TimerEvent: {}
+[9.713304] (-) TimerEvent: {}
+[9.813554] (-) TimerEvent: {}
+[9.913796] (-) TimerEvent: {}
+[10.014047] (-) TimerEvent: {}
+[10.114308] (-) TimerEvent: {}
+[10.214610] (-) TimerEvent: {}
+[10.249577] (car_demo) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[10.314722] (-) TimerEvent: {}
+[10.319241] (car_demo) StdoutLine: {'line': b'[ 62%] Built target gtest\n'}
+[10.342330] (car_demo) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/PriusHybridPluginTest.dir/plugins/PriusHybridPlugin.cc.o\x1b[0m\n'}
+[10.414815] (-) TimerEvent: {}
+[10.515061] (-) TimerEvent: {}
+[10.615303] (-) TimerEvent: {}
+[10.715549] (-) TimerEvent: {}
+[10.815847] (-) TimerEvent: {}
+[10.916131] (-) TimerEvent: {}
+[11.016396] (-) TimerEvent: {}
+[11.116649] (-) TimerEvent: {}
+[11.216910] (-) TimerEvent: {}
+[11.317181] (-) TimerEvent: {}
+[11.417451] (-) TimerEvent: {}
+[11.517727] (-) TimerEvent: {}
+[11.618030] (-) TimerEvent: {}
+[11.718282] (-) TimerEvent: {}
+[11.818541] (-) TimerEvent: {}
+[11.918801] (-) TimerEvent: {}
+[12.019059] (-) TimerEvent: {}
+[12.119305] (-) TimerEvent: {}
+[12.219598] (-) TimerEvent: {}
+[12.319848] (-) TimerEvent: {}
+[12.420094] (-) TimerEvent: {}
+[12.520341] (-) TimerEvent: {}
+[12.620629] (-) TimerEvent: {}
+[12.720940] (-) TimerEvent: {}
+[12.821227] (-) TimerEvent: {}
+[12.921503] (-) TimerEvent: {}
+[13.021751] (-) TimerEvent: {}
+[13.122000] (-) TimerEvent: {}
+[13.222258] (-) TimerEvent: {}
+[13.322544] (-) TimerEvent: {}
+[13.422854] (-) TimerEvent: {}
+[13.523107] (-) TimerEvent: {}
+[13.623359] (-) TimerEvent: {}
+[13.723632] (-) TimerEvent: {}
+[13.823887] (-) TimerEvent: {}
+[13.924129] (-) TimerEvent: {}
+[14.024374] (-) TimerEvent: {}
+[14.124617] (-) TimerEvent: {}
+[14.224865] (-) TimerEvent: {}
+[14.325118] (-) TimerEvent: {}
+[14.425373] (-) TimerEvent: {}
+[14.525631] (-) TimerEvent: {}
+[14.625888] (-) TimerEvent: {}
+[14.726139] (-) TimerEvent: {}
+[14.826392] (-) TimerEvent: {}
+[14.926653] (-) TimerEvent: {}
+[15.026956] (-) TimerEvent: {}
+[15.127218] (-) TimerEvent: {}
+[15.227476] (-) TimerEvent: {}
+[15.327789] (-) TimerEvent: {}
+[15.428110] (-) TimerEvent: {}
+[15.528356] (-) TimerEvent: {}
+[15.628642] (-) TimerEvent: {}
+[15.728962] (-) TimerEvent: {}
+[15.829306] (-) TimerEvent: {}
+[15.929676] (-) TimerEvent: {}
+[16.029955] (-) TimerEvent: {}
+[16.130279] (-) TimerEvent: {}
+[16.230552] (-) TimerEvent: {}
+[16.330813] (-) TimerEvent: {}
+[16.431077] (-) TimerEvent: {}
+[16.531378] (-) TimerEvent: {}
+[16.631761] (-) TimerEvent: {}
+[16.732025] (-) TimerEvent: {}
+[16.832275] (-) TimerEvent: {}
+[16.932526] (-) TimerEvent: {}
+[17.032796] (-) TimerEvent: {}
+[17.133058] (-) TimerEvent: {}
+[17.233342] (-) TimerEvent: {}
+[17.333594] (-) TimerEvent: {}
+[17.433848] (-) TimerEvent: {}
+[17.534110] (-) TimerEvent: {}
+[17.634405] (-) TimerEvent: {}
+[17.734652] (-) TimerEvent: {}
+[17.834902] (-) TimerEvent: {}
+[17.935167] (-) TimerEvent: {}
+[18.035423] (-) TimerEvent: {}
+[18.135713] (-) TimerEvent: {}
+[18.235968] (-) TimerEvent: {}
+[18.336245] (-) TimerEvent: {}
+[18.436519] (-) TimerEvent: {}
+[18.536775] (-) TimerEvent: {}
+[18.637050] (-) TimerEvent: {}
+[18.737316] (-) TimerEvent: {}
+[18.837627] (-) TimerEvent: {}
+[18.937887] (-) TimerEvent: {}
+[19.038181] (-) TimerEvent: {}
+[19.138452] (-) TimerEvent: {}
+[19.238707] (-) TimerEvent: {}
+[19.339070] (-) TimerEvent: {}
+[19.439335] (-) TimerEvent: {}
+[19.539701] (-) TimerEvent: {}
+[19.640095] (-) TimerEvent: {}
+[19.740346] (-) TimerEvent: {}
+[19.840602] (-) TimerEvent: {}
+[19.940856] (-) TimerEvent: {}
+[20.041110] (-) TimerEvent: {}
+[20.141359] (-) TimerEvent: {}
+[20.241622] (-) TimerEvent: {}
+[20.341888] (-) TimerEvent: {}
+[20.442184] (-) TimerEvent: {}
+[20.542475] (-) TimerEvent: {}
+[20.642735] (-) TimerEvent: {}
+[20.743004] (-) TimerEvent: {}
+[20.843289] (-) TimerEvent: {}
+[20.943541] (-) TimerEvent: {}
+[21.043805] (-) TimerEvent: {}
+[21.144072] (-) TimerEvent: {}
+[21.244333] (-) TimerEvent: {}
+[21.344579] (-) TimerEvent: {}
+[21.444828] (-) TimerEvent: {}
+[21.545086] (-) TimerEvent: {}
+[21.645341] (-) TimerEvent: {}
+[21.745590] (-) TimerEvent: {}
+[21.845864] (-) TimerEvent: {}
+[21.946118] (-) TimerEvent: {}
+[22.046357] (-) TimerEvent: {}
+[22.146596] (-) TimerEvent: {}
+[22.246836] (-) TimerEvent: {}
+[22.347095] (-) TimerEvent: {}
+[22.447408] (-) TimerEvent: {}
+[22.547718] (-) TimerEvent: {}
+[22.647997] (-) TimerEvent: {}
+[22.748244] (-) TimerEvent: {}
+[22.848513] (-) TimerEvent: {}
+[22.948768] (-) TimerEvent: {}
+[23.049040] (-) TimerEvent: {}
+[23.149325] (-) TimerEvent: {}
+[23.249581] (-) TimerEvent: {}
+[23.349834] (-) TimerEvent: {}
+[23.450143] (-) TimerEvent: {}
+[23.550388] (-) TimerEvent: {}
+[23.650643] (-) TimerEvent: {}
+[23.750913] (-) TimerEvent: {}
+[23.851159] (-) TimerEvent: {}
+[23.951413] (-) TimerEvent: {}
+[24.051714] (-) TimerEvent: {}
+[24.152099] (-) TimerEvent: {}
+[24.252365] (-) TimerEvent: {}
+[24.352636] (-) TimerEvent: {}
+[24.452887] (-) TimerEvent: {}
+[24.553137] (-) TimerEvent: {}
+[24.653388] (-) TimerEvent: {}
+[24.753657] (-) TimerEvent: {}
+[24.853902] (-) TimerEvent: {}
+[24.954149] (-) TimerEvent: {}
+[25.054417] (-) TimerEvent: {}
+[25.154685] (-) TimerEvent: {}
+[25.255025] (-) TimerEvent: {}
+[25.355339] (-) TimerEvent: {}
+[25.455637] (-) TimerEvent: {}
+[25.555893] (-) TimerEvent: {}
+[25.656224] (-) TimerEvent: {}
+[25.756674] (-) TimerEvent: {}
+[25.856917] (-) TimerEvent: {}
+[25.957210] (-) TimerEvent: {}
+[26.057452] (-) TimerEvent: {}
+[26.157759] (-) TimerEvent: {}
+[26.258150] (-) TimerEvent: {}
+[26.358424] (-) TimerEvent: {}
+[26.458738] (-) TimerEvent: {}
+[26.551024] (car_demo) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libPriusHybridPlugin.so\x1b[0m\n'}
+[26.560599] (-) TimerEvent: {}
+[26.660824] (-) TimerEvent: {}
+[26.761105] (-) TimerEvent: {}
+[26.861442] (-) TimerEvent: {}
+[26.961745] (-) TimerEvent: {}
+[27.062081] (-) TimerEvent: {}
+[27.162376] (-) TimerEvent: {}
+[27.262659] (-) TimerEvent: {}
+[27.362923] (-) TimerEvent: {}
+[27.463212] (-) TimerEvent: {}
+[27.563503] (-) TimerEvent: {}
+[27.663774] (-) TimerEvent: {}
+[27.764038] (-) TimerEvent: {}
+[27.864361] (-) TimerEvent: {}
+[27.876882] (car_demo) StdoutLine: {'line': b'[ 87%] Built target PriusHybridPlugin\n'}
+[27.964457] (-) TimerEvent: {}
+[28.064722] (-) TimerEvent: {}
+[28.164998] (-) TimerEvent: {}
+[28.265282] (-) TimerEvent: {}
+[28.365559] (-) TimerEvent: {}
+[28.465838] (-) TimerEvent: {}
+[28.566090] (-) TimerEvent: {}
+[28.666370] (-) TimerEvent: {}
+[28.766653] (-) TimerEvent: {}
+[28.846505] (car_demo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable PriusHybridPluginTest\x1b[0m\n'}
+[28.866744] (-) TimerEvent: {}
+[28.966978] (-) TimerEvent: {}
+[29.067249] (-) TimerEvent: {}
+[29.167588] (-) TimerEvent: {}
+[29.267929] (-) TimerEvent: {}
+[29.368266] (-) TimerEvent: {}
+[29.468611] (-) TimerEvent: {}
+[29.568948] (-) TimerEvent: {}
+[29.669228] (-) TimerEvent: {}
+[29.769527] (-) TimerEvent: {}
+[29.869766] (-) TimerEvent: {}
+[29.970006] (-) TimerEvent: {}
+[30.070245] (-) TimerEvent: {}
+[30.170490] (-) TimerEvent: {}
+[30.270739] (-) TimerEvent: {}
+[30.370988] (-) TimerEvent: {}
+[30.471232] (-) TimerEvent: {}
+[30.571494] (-) TimerEvent: {}
+[30.597299] (car_demo) StdoutLine: {'line': b'[100%] Built target PriusHybridPluginTest\n'}
+[30.610237] (car_demo) CommandEnded: {'returncode': 0}
+[30.666866] (car_demo) JobProgress: {'identifier': 'car_demo', 'progress': 'install'}
+[30.667369] (car_demo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo'], 'cwd': '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abdallah'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib:/home/abdallah/Projects/ros2_ws/install/car_demo/lib:/home/abdallah/Projects/ros2_ws/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abdallah'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/abdallah/.nix-profile'), ('MANAGERPID', '2161'), ('SYSTEMD_EXEC_PID', '2599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7730'), ('NVM_DIR', '/home/abdallah/.nvm'), ('COLCON_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abdallah'), ('JOURNAL_STREAM', '8:33406'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abdallah'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/models:/opt/ros/humble/share/prius_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/abdallah/miniconda3/condabin:/opt/ros/humble/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/abdallah/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/python3:/snap/bin:/home/abdallah/.dotnet/tools:/usr/local/go/bin:/home/abdallah/go/bin'), ('SESSION_MANAGER', 'local/abdallah-desktop:@/tmp/.ICE-unix/2447,unix/abdallah-desktop:/tmp/.ICE-unix/2447'), ('INVOCATION_ID', '77f864b5db3a473584a11ed23fa16daa'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/abdallah/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/abdallah/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65598595-343e-4a58-89a7-852e87183c3c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/abdallah/miniconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share:/home/abdallah/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/car_demo/local/lib/python3.10/dist-packages:/home/abdallah/Projects/ros2_ws/install/prius_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble')]), 'shell': False}
+[30.671547] (-) TimerEvent: {}
+[30.676039] (car_demo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.688444] (car_demo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[30.688865] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/library_path.sh\n'}
+[30.698526] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/library_path.dsv\n'}
+[30.708261] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/gazebo_plugins.sh\n'}
+[30.717984] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/gazebo_plugins.dsv\n'}
+[30.727530] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/pythonpath.sh\n'}
+[30.737179] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/pythonpath.dsv\n'}
+[30.747875] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[30.757385] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[30.766746] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[30.771641] (-) TimerEvent: {}
+[30.776758] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[30.786625] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo/__init__.py\n'}
+[30.796265] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/prius_teleop_keyboard.py\n'}
+[30.805746] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/solution.py\n'}
+[30.815489] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/despawn_prius.py\n'}
+[30.825059] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/spawn_prius.py\n'}
+[30.834654] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/judge.py\n'}
+[30.845042] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/libPriusHybridPlugin.so\n'}
+[30.854678] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/ament_index/resource_index/package_run_dependencies/car_demo\n'}
+[30.864407] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/ament_index/resource_index/parent_prefix_path/car_demo\n'}
+[30.871728] (-) TimerEvent: {}
+[30.874078] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/ament_prefix_path.sh\n'}
+[30.883975] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/ament_prefix_path.dsv\n'}
+[30.893458] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/path.sh\n'}
+[30.902926] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/path.dsv\n'}
+[30.912642] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/local_setup.bash\n'}
+[30.922615] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/local_setup.sh\n'}
+[30.932298] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/local_setup.zsh\n'}
+[30.942286] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/local_setup.dsv\n'}
+[30.951996] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/package.dsv\n'}
+[30.961799] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/ament_index/resource_index/packages/car_demo\n'}
+[30.971840] (-) TimerEvent: {}
+[30.972043] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[30.981830] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[30.991194] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[31.000854] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/car_demoConfig.cmake\n'}
+[31.010924] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/car_demoConfig-version.cmake\n'}
+[31.020359] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/package.xml\n'}
+[31.030135] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/launch/demo.launch.py\n'}
+[31.039981] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/launch/machathon.launch.py\n'}
+[31.049721] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/launch/spawn_prius.launch.py\n'}
+[31.071337] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/meshes/Mach Logo.jpg\n'}
+[31.071893] (-) TimerEvent: {}
+[31.081209] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/meshes/SimulationTrack.dae\n'}
+[31.090622] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/meshes/SimulationTrack.stl\n'}
+[31.100580] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/meshes/mac_logo.png\n'}
+[31.110790] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/model.config\n'}
+[31.120173] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/model.sdf\n'}
+[31.135439] (car_demo) StdoutLine: {'line': b'-- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/worlds/MachathonTrack.world\n'}
+[31.145572] (car_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/libPriusHybridPlugin.so\n'}
+[31.172003] (-) TimerEvent: {}
+[31.193874] (car_demo) StdoutLine: {'line': b"Listing '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo'...\n"}
+[31.194013] (car_demo) StdoutLine: {'line': b"Compiling '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo/__init__.py'...\n"}
+[31.200416] (car_demo) CommandEnded: {'returncode': 0}
+[31.272078] (-) TimerEvent: {}
+[31.373060] (-) TimerEvent: {}
+[31.412379] (car_demo) JobEnded: {'identifier': 'car_demo', 'rc': 0}
+[31.412904] (-) EventReactorShutdown: {}

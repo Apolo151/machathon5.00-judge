@@ -1,0 +1,192 @@
+[0.055s] Invoking command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo': AMENT_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo
+[0.109s] -- The C compiler identification is GNU 11.4.0
+[0.162s] -- The CXX compiler identification is GNU 11.4.0
+[0.169s] -- Detecting C compiler ABI info
+[0.247s] -- Detecting C compiler ABI info - done
+[0.254s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.254s] -- Detecting C compile features
+[0.254s] -- Detecting C compile features - done
+[0.257s] -- Detecting CXX compiler ABI info
+[0.342s] -- Detecting CXX compiler ABI info - done
+[0.349s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.349s] -- Detecting CXX compile features
+[0.349s] -- Detecting CXX compile features - done
+[0.352s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.521s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.576s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.611s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.657s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.662s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.670s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.684s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.702s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.781s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.785s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.920s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.954s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.011s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.025s] -- Looking for pthread.h
+[1.109s] -- Looking for pthread.h - found
+[1.109s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.188s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.189s] -- Found Threads: TRUE  
+[1.356s] -- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)
+[1.359s] -- Found gazebo_dev: 3.7.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[1.368s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.369s] -- Checking for module 'bullet>=2.82'
+[1.385s] --   Found bullet, version 3.05
+[1.527s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.594s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.623s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.655s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.675s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.682s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.690s] -- Searching for dependencies of ignition-math6
+[1.692s] -- Looking for OGRE...
+[1.692s] -- OGRE_PREFIX_WATCH changed.
+[1.698s] -- Checking for module 'OGRE'
+[1.714s] --   Found OGRE, version 1.9.0
+[1.761s] -- Found Ogre Ghadamon (1.9.0)
+[1.772s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.781s] -- Looking for OGRE_Paging...
+[1.790s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.790s] -- Looking for OGRE_Terrain...
+[1.802s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.802s] -- Looking for OGRE_Property...
+[1.813s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.813s] -- Looking for OGRE_RTShaderSystem...
+[1.822s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.822s] -- Looking for OGRE_Volume...
+[1.832s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.832s] -- Looking for OGRE_Overlay...
+[1.841s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.968s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.973s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.974s] -- Searching for dependencies of ignition-transport8
+[1.994s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.007s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.013s] -- Checking for module 'libzmq >= 4'
+[2.032s] --   Found libzmq , version 4.3.4
+[2.080s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.088s] -- Checking for module 'uuid'
+[2.105s] --   Found uuid, version 2.37.2
+[2.147s] -- Found UUID: TRUE  
+[2.151s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.151s] -- Searching for dependencies of ignition-msgs5
+[2.173s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.179s] -- Checking for module 'tinyxml2'
+[2.195s] --   Found tinyxml2, version 9.0.0
+[2.241s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.244s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.245s] -- Searching for dependencies of ignition-common3
+[2.245s] -- Looking for dlfcn.h - found
+[2.246s] -- Looking for libdl - found
+[2.247s] -- Found DL: TRUE  
+[2.260s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.260s] -- Searching for <ignition-common3> component [graphics]
+[2.263s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.264s] -- Searching for dependencies of ignition-common3-graphics
+[2.264s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.268s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.268s] -- Searching for dependencies of ignition-fuel_tools4
+[2.367s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.377s] -- Checking for module 'jsoncpp'
+[2.394s] --   Found jsoncpp, version 1.9.5
+[2.437s] -- Found JSONCPP: TRUE  
+[2.447s] -- Checking for module 'libzip'
+[2.472s] --   Found libzip, version 1.7.3
+[2.525s] -- Found ZIP: TRUE  
+[2.525s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.525s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.526s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.531s] -- Gazebo version: 11.10
+[2.532s] -- Checking for module 'tbb'
+[2.548s] --   Found tbb, version 2021.5.0
+[2.596s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[2.845s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.852s] -- Found prius_msgs: 0.0.1 (/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/share/prius_msgs/cmake)
+[2.903s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.904s] -- Found prius_description: 0.0.1 (/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/cmake)
+[3.009s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.066s] -- Found ament_cmake_gtest: 1.3.7 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.069s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.094s] -- Configuring done
+[3.144s] -- Generating done
+[3.149s] -- Build files have been written to: /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo
+[3.170s] Invoked command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo' returned '0': AMENT_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo
+[3.171s] Invoking command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo': AMENT_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo -- -j12 -l12
+[3.230s] [ 12%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[3.232s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[3.234s] [ 37%] [32mBuilding CXX object CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.o[0m
+[3.240s] [ 37%] Built target ament_cmake_python_symlink_car_demo
+[3.447s] running egg_info
+[3.447s] creating car_demo.egg-info
+[3.447s] writing car_demo.egg-info/PKG-INFO
+[3.447s] writing dependency_links to car_demo.egg-info/dependency_links.txt
+[3.448s] writing top-level names to car_demo.egg-info/top_level.txt
+[3.449s] writing manifest file 'car_demo.egg-info/SOURCES.txt'
+[3.451s] reading manifest file 'car_demo.egg-info/SOURCES.txt'
+[3.452s] writing manifest file 'car_demo.egg-info/SOURCES.txt'
+[3.487s] [ 37%] Built target ament_cmake_python_build_car_demo_egg
+[3.751s] [ 50%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.791s] [ 50%] Built target gtest_main
+[5.571s] [ 62%] [32m[1mLinking CXX static library libgtest.a[0m
+[5.640s] [ 62%] Built target gtest
+[5.663s] [ 75%] [32mBuilding CXX object CMakeFiles/PriusHybridPluginTest.dir/plugins/PriusHybridPlugin.cc.o[0m
+[21.874s] [ 87%] [32m[1mLinking CXX shared library libPriusHybridPlugin.so[0m
+[23.198s] [ 87%] Built target PriusHybridPlugin
+[24.168s] [100%] [32m[1mLinking CXX executable PriusHybridPluginTest[0m
+[25.918s] [100%] Built target PriusHybridPluginTest
+[25.956s] Invoked command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo' returned '0': AMENT_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo -- -j12 -l12
+[25.989s] Invoking command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo': AMENT_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo
+[25.997s] -- Install configuration: ""
+[26.010s] -- Execute custom install script
+[26.010s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/library_path.sh
+[26.020s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/library_path.dsv
+[26.029s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/gazebo_plugins.sh
+[26.039s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/gazebo_plugins.dsv
+[26.049s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/pythonpath.sh
+[26.058s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/pythonpath.dsv
+[26.069s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/PKG-INFO
+[26.078s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/SOURCES.txt
+[26.088s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/dependency_links.txt
+[26.098s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/top_level.txt
+[26.108s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo/__init__.py
+[26.117s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/prius_teleop_keyboard.py
+[26.127s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/solution.py
+[26.137s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/despawn_prius.py
+[26.146s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/spawn_prius.py
+[26.156s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/car_demo/judge.py
+[26.166s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/libPriusHybridPlugin.so
+[26.176s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/ament_index/resource_index/package_run_dependencies/car_demo
+[26.186s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/ament_index/resource_index/parent_prefix_path/car_demo
+[26.195s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/ament_prefix_path.sh
+[26.205s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/ament_prefix_path.dsv
+[26.215s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/path.sh
+[26.224s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/environment/path.dsv
+[26.234s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/local_setup.bash
+[26.244s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/local_setup.sh
+[26.253s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/local_setup.zsh
+[26.263s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/local_setup.dsv
+[26.273s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/package.dsv
+[26.283s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/ament_index/resource_index/packages/car_demo
+[26.293s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/ament_cmake_export_libraries-extras.cmake
+[26.303s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.312s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.322s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/car_demoConfig.cmake
+[26.332s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/cmake/car_demoConfig-version.cmake
+[26.341s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/package.xml
+[26.351s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/launch/demo.launch.py
+[26.361s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/launch/machathon.launch.py
+[26.371s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/launch/spawn_prius.launch.py
+[26.392s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/meshes/Mach Logo.jpg
+[26.402s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/meshes/SimulationTrack.dae
+[26.412s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/meshes/SimulationTrack.stl
+[26.422s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/meshes/mac_logo.png
+[26.432s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/model.config
+[26.441s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/models/track/model.sdf
+[26.457s] -- Symlinking: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/share/car_demo/worlds/MachathonTrack.world
+[26.467s] -- Up-to-date symlink: /home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/lib/libPriusHybridPlugin.so
+[26.515s] Listing '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo'...
+[26.515s] Compiling '/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/car_demo/local/lib/python3.10/dist-packages/car_demo/__init__.py'...
+[26.522s] Invoked command in '/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo' returned '0': AMENT_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs:/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description:/home/abdallah/Projects/ros2_ws/install/car_demo:/home/abdallah/Projects/ros2_ws/install/prius_msgs:/home/abdallah/Projects/ros2_ws/install/prius_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdallah/Projects/ros2_ws/src/machathon5.00/install/prius_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo

@@ -1,0 +1,3 @@
+source;share/prius_description/environment/ament_prefix_path.sh
+source;share/prius_description/environment/gazebo_envs.sh
+source;share/prius_description/environment/path.sh
