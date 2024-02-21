@@ -36,8 +36,12 @@ This repository provides all the required tools and utilities for the Machathon 
 ```bash
 sudo apt update
 sudo apt -y install gazebo
+## if you are using ros2-humble
 sudo apt install ros-humble-gazebo-ros-pkgs
 sudo apt install ros-humble-xacro
+## if you are using ros2-foxy
+sudo apt install ros-foxy-gazebo-ros-pkgs
+sudo apt install ros-foxy-xacro
 ```
 * Python version 3.8 (humble) or 3.10 (foxy)
 ```bash
