@@ -89,7 +89,8 @@ class Judge(Node):
             requests.Response.raise_for_status()
             self.get_logger().info(str("Submission sent successfully"))
         except requests.exceptions.RequestException as e:
-            self.get_logger().info(str("Submission sending failed:".format(e)))
+            self.get_logger().info(str("Submission sending faild: {}".format(e)))
+            print("Check your connection")
             self.get_logger().info(str("Check your connection"))
             
 
