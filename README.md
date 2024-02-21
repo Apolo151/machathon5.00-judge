@@ -1,5 +1,17 @@
 # Machathon 5.00
 <p align="center">
+  <a style="text-decoration:none" >
+    <img src="https://img.shields.io/badge/Code-Python-blue?logo=python" alt="Website" />
+  </a>
+  <a style="text-decoration:none" >
+    <img src="https://img.shields.io/badge/Track Design-Blender-orange?logo=Blender" alt="Website" />
+  </a>
+  <a style="text-decoration:none" >
+    <img src="https://img.shields.io/badge/Simulator-Gazebo-red" alt="Website" />
+  </a>
+</p>
+
+<p align="center">
     <img src="https://github.com/Apolo151/machathon5.00/assets/110634473/90477a3a-5e30-4b0c-a62b-65722f0271ca"
       alt="Picture" 
         width="400" 
@@ -78,3 +90,5 @@ source ~/.bashrc
 source install/setup.bash
 ros2 run car_demo prius_teleop_keyboard.py
 ```
+
+

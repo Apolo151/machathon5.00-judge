@@ -7,15 +7,20 @@ import spawn_prius
 import despawn_prius
 import json
 import time
-import data
+from data import Data
 import requests
-import sys
 
+'''Global variables'''
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
 CHECKPOINTS_LIST = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
 API_URL = 'https://comfortable-crab-pleat.cyclic.app/scores'
-# TODO: add submission JSON
-# TODO: send request to API
+'''-----------------'''
+
+
+'''Checkpoints class
+    - __init__: initialize the checkpoints and related variables
+    - checkPassedCheckpoints: check if the car passed a checkpoint
+'''
 class Checkpoints():
     def __init__(self):
         self.checkpoints_passed = [False] * 3
@@ -39,6 +44,9 @@ class Checkpoints():
                 self.curr_checkpoint_idx -= 1
                 print("You passed a checkpoint, GOOD JOB!")
 
+'''Timer class
+    Calculate the elapsed time for each lap
+'''
 class Timer():
     def __init__(self):
         self.timer_started = False
@@ -58,14 +66,19 @@ class Timer():
             #Will return Elapsed
             return elapsed_time
 
+'''Judge class
+    - __init__: initialize the judge node and related variables
+    - send_submission: send the submission data to the server
+    - callback: callback function for the subscriber
+'''
 class Judge(Node):
-    def __init__(self,Team_Name:str):
+    def __init__(self, team_name:str, team_code:str, submit_choice:bool):
         despawn_prius.despawn()
         spawn_prius.spawn(72.71,-470.1,-5,-0.007621,0.025542,-0.135)
         self.final_pos = {"x": FINAL_X,"y": FINAL_Y,"z": FINAL_Z}
         self.timer = Timer()
         self.checkpoints = Checkpoints()
-        self.data = data.Data()
+        self.data = Data()
         ####
         super().__init__("Judge")
         self.pose_subscriber = self.create_subscription(Odometry,"/prius/odom",self.callback,10)
@@ -74,7 +87,6 @@ class Judge(Node):
         self.lapTime =[0,0]
         ## TODO: change to use data object
         self.submission_data = {
-            "team_name": self.data.team_name,
             "team_code":self.data.team_code,
             "team_solution": self.data.solution,
             "first_laptime": None,
@@ -82,7 +94,6 @@ class Judge(Node):
         }
         self.submission_json = None
     
-    ## TODO: Implement
     def send_submission(self, submission_data):
         try:
             requests.post(API_URL,self.submission_json)
@@ -134,11 +145,10 @@ class Judge(Node):
                     rclpy.shutdown()
 
 
-
 ######
 def main():
     rclpy.init()
-    node = Judge("Team Name")
+    node = Judge()
     rclpy.spin(node)
     rclpy.shutdown()
 
