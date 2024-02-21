@@ -134,13 +134,11 @@ class Judge(Node):
                 self.submission_data["second_laptime"] = self.lapTime[1]
                 # Convert submission data to JSON format
                 #submission_json = json.dumps(self.submission_data)
-                self.get_logger().info(str(self.submission_data))
+                self.get_logger().info(str("First laptime: {}".format(self.submission_data["first_laptime"])))
+                self.get_logger().info(str("Second laptime: {}".format(self.submission_data["second_laptime"])))
                 ### if submit is True
                 if self.data.submit_choice == True :
-                    if self.submission_data.first_laptime != None and self.submission_data.second_laptime != None:
-                        self.send_submission()
-                    else:
-                        self.get_logger().info(str("An error occured, please check your code"))
+                    self.send_submission()
                     despawn_prius.despawn()
                     self.destroy_node()
                     rclpy.shutdown()
