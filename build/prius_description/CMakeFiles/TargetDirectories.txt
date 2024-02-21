@@ -1,9 +1,0 @@
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/CMakeFiles/uninstall.dir
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/CMakeFiles/prius_description_uninstall.dir
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/CMakeFiles/test.dir
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/CMakeFiles/edit_cache.dir
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/CMakeFiles/rebuild_cache.dir
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/CMakeFiles/list_install_components.dir
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/CMakeFiles/install.dir
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/CMakeFiles/install/local.dir
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/CMakeFiles/install/strip.dir

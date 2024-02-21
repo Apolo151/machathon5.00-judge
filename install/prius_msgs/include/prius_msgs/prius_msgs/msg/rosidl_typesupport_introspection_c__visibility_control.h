@@ -1,1 +1,0 @@
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_msgs/rosidl_typesupport_introspection_c/prius_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

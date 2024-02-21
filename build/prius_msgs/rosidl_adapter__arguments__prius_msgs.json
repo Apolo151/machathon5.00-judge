@@ -1,6 +1,0 @@
-{
-  "package_name": "prius_msgs",
-  "non_idl_tuples": [
-    "/home/abdallah/Projects/ros2_ws/src/machathon5.00/prius_msgs:msg/Control.msg"
-  ]
-}

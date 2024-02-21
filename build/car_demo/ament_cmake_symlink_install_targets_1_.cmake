@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/car_demo/libPriusHybridPlugin.so" "TARGETS" "PriusHybridPlugin" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

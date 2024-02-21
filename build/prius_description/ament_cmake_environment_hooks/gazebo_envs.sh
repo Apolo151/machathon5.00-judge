@@ -1,1 +1,0 @@
-ament_prepend_unique_value GAZEBO_MODEL_PATH "$AMENT_CURRENT_PREFIX/share/prius_description/models"

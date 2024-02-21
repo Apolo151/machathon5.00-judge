@@ -1,1 +1,0 @@
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/car_demo/scripts/prius_teleop_keyboard.py

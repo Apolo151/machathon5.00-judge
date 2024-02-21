@@ -1,1 +1,0 @@
-/home/abdallah/Projects/ros2_ws/src/machathon5.00/build/prius_description/ament_cmake_core/prius_descriptionConfig-version.cmake
