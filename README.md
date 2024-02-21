@@ -91,4 +91,42 @@ source install/setup.bash
 ros2 run car_demo prius_teleop_keyboard.py
 ```
 
+## Project Hierarchy
+
+```bash
+machathon5.00-judge
+├── car_demo
+│   ├── car_demo
+│   ├── CMakeLists.txt
+│   ├── env-hooks
+│   ├── launch
+│   │   ├── demo.launch.py # launches gazebo and track scene
+│   │   ├── machathon.launch.py # launches judge and solution nodes
+│   │   └── spawn_prius.launch.py
+│   ├── models
+│   ├── package.xml
+│   ├── plugins
+│   ├── scripts
+│   │   ├── data.py # teams data config
+│   │   ├── despawn_prius.py
+│   │   ├── judge.py # judge node
+│   │   ├── prius_teleop_keyboard.py # keyboard telep node
+│   │   ├── solution.py # your solution file
+│   │   └── spawn_prius.py
+│   └── worlds
+│       └── MachathonTrack.world # The Gazebo track scene
+├── prius_description # car's description
+├── prius_msgs
+└── README.md
+
+```
+
+## Attribution
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/59095993/218258481-82b37fcf-10ad-4a2f-99d0-555e5610b6f2.png" width=100 height=100 alt="STP logo">
+</p>
+This code was developed and maintained by Step Towards Progress STP, a non-profit organization focuses on developing youth in various fields personally and technically through academic programs, projects, and events. You can find more information about STP at https://stp-org.com/
+
+----
+This code was heavily based on [osrf car_demo](https://github.com/osrf/car_demo) and [NovoG93 car_demo](https://github.com/NovoG93/car_demo), we wholeheartedly thank them for their invaluable contributions and open source code.
 
