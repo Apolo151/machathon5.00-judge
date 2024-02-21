@@ -55,11 +55,8 @@ class Camera(Node):
 
 def main():
     rclpy.init()
-
     node = Camera()
     rclpy.spin(node)
-
-
     rclpy.shutdown()
 
 if __name__ == '__main__':
