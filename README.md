@@ -70,8 +70,8 @@ source ~/.bashrc
 source install/setup.bash
 ros2 launch car_demo machathon.launch.py
 ```
-#### Run telep node to control the car via the keyboard (for testing)
-1. open another terminal and run the following commands
+#### Running the telep node to control the car via the keyboard (for testing)
+- open another terminal and run the following commands
  ```bash
 sudo su
 source ~/.bashrc
