@@ -56,7 +56,6 @@ class SolutionNode(Node):
     def callback(self,msg:Image):
         cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
         cv_image = self.draw_fps(cv_image)
-        self.publisher.publish(self.command)
         #### show image
         cv2.imshow("prius_front",cv_image)
         cv2.waitKey(5)

@@ -14,6 +14,7 @@ import requests
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
 CHECKPOINTS_LIST = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
 API_URL = 'https://comfortable-crab-pleat.cyclic.app/scores'
+HEADERS = {'Content-type': 'application/json', 'Accept': 'text/plain'}
 '''-----------------'''
 
 
@@ -72,7 +73,7 @@ class Timer():
     - callback: callback function for the subscriber
 '''
 class Judge(Node):
-    def __init__(self, team_name:str, team_code:str, submit_choice:bool):
+    def __init__(self):
         despawn_prius.despawn()
         spawn_prius.spawn(72.71,-470.1,-5,-0.007621,0.025542,-0.135)
         self.final_pos = {"x": FINAL_X,"y": FINAL_Y,"z": FINAL_Z}
@@ -85,23 +86,20 @@ class Judge(Node):
         self.timer.start_timer()
         self.lap_completed = 0
         self.lapTime =[0,0]
-        ## TODO: change to use data object
+        ###
         self.submission_data = {
             "team_code":self.data.team_code,
-            "team_solution": self.data.solution,
+            "solution_file": self.data.solution_file,
             "first_laptime": None,
             "second_laptime": None
         }
-        self.submission_json = None
     
-    def send_submission(self, submission_data):
+    def send_submission(self):
         try:
-            requests.post(API_URL,self.submission_json)
-            requests.Response.raise_for_status()
+            requests.post(API_URL, json=self.submission_data, headers=HEADERS)
             self.get_logger().info(str("Submission sent successfully"))
         except requests.exceptions.RequestException as e:
-            self.get_logger().info(str("Submission sending faild: {}".format(e)))
-            print("Check your connection")
+            self.get_logger().info(str("Submission sending failed: {}".format(e)))
             self.get_logger().info(str("Check your connection"))
             
 
@@ -138,8 +136,11 @@ class Judge(Node):
                 submission_json = json.dumps(self.submission_data)
                 ### if submit is True
                 if self.data.submit_choice == True :
-                    self.send_submission(self.submission_data)
-                    self.get_logger().info(str(submission_json))
+                    if self.submission_data.first_laptime != None and self.submission_data.second_laptime != None:
+                        self.send_submission()
+                        self.get_logger().info(str(self.submission_data))
+                    else:
+                        self.get_logger().info(str("An error occured, please check your code"))
                     despawn_prius.despawn()
                     self.destroy_node()
                     rclpy.shutdown()
