@@ -22,6 +22,10 @@
 
 This repository provides all the required tools and utilities for the Machathon 5.00 simulation phase. A gazebo world that contains the competition vehicle and the track. The car navigates in one direction, followed by navigating in the opposite direction. The time taken to complete each run, known as the lap time, is recorded. <br> After completing the track in both directions, the total lap time is send to the leaderboard if chosen to do so.
 
+#### Links
+- [Rules Book](https://drive.google.com/file/d/1XvMcuaJ13R88KsatR51eGoJwgwkqPXrs/view?usp=sharing)
+- [Leaderboard](https://stp-frontend-leaderboard.onrender.com/)
+
 ## Requirements
 * ROS2 installation using any of the following options
   * Using ROS2 humble (Ubuntu 22.04) installation: [Install ROS2 humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
@@ -37,7 +41,7 @@ sudo apt install ros-humble-xacro
 ```
 * Python version 3.8 (humble) or 3.10 (foxy)
 ```bash
-## check python version in termainl
+## check python version in terminal
 python3 --version
 ```
 * keyboard package
