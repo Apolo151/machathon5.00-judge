@@ -92,7 +92,7 @@ endif()
 ament_package()
 
 install(
-  DIRECTORY launch models worlds
+  DIRECTORY launch models worlds scripts
   DESTINATION share/${PROJECT_NAME}
 )
 
