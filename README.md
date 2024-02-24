@@ -43,7 +43,7 @@ sudo apt install ros-humble-xacro
 sudo apt install ros-foxy-gazebo-ros-pkgs
 sudo apt install ros-foxy-xacro
 ```
-* Python version 3.8 (humble) or 3.10 (foxy)
+* Python version 3.10 (humble) or 3.8 (foxy)
 ```bash
 ## check python version in terminal
 python3 --version
@@ -66,7 +66,7 @@ mkdir src
 #### 3. Clone the repository inside the src folder
  ```bash
 cd src
-git clone https://github.com/Apolo151/machathon5.00.git
+git clone https://github.com/Apolo151/machathon5.00.git --depth=1
 ```
 #### 4. Build the workspace
 ```bash
