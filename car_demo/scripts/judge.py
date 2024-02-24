@@ -89,7 +89,7 @@ class Judge(Node):
         ###
         self.submission_data = {
             "team_code":self.data.team_code,
-            "solution_file": self.data.solution_file,
+            "solution_file": None, ##
             "first_laptime": None,
             "second_laptime": None
         }
