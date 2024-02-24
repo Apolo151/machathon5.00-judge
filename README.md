@@ -43,7 +43,7 @@ sudo apt install ros-humble-xacro
 sudo apt install ros-foxy-gazebo-ros-pkgs
 sudo apt install ros-foxy-xacro
 ```
-* Python version 3.8 (humble) or 3.10 (foxy)
+* Python version 3.10 (humble) or 3.8 (foxy)
 ```bash
 ## check python version in terminal
 python3 --version
