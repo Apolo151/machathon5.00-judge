@@ -13,7 +13,7 @@ import requests
 '''Global variables'''
 FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
 CHECKPOINTS_LIST = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
-API_URL = 'https://comfortable-crab-pleat.cyclic.app/scores'
+API_URL = 'https://wicked-pink-cormorant.cyclic.app/scores'
 HEADERS = {'Content-type': 'application/json', 'Accept': 'text/plain'}
 '''-----------------'''
 
