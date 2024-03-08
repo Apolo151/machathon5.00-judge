@@ -11,8 +11,8 @@ from data import Data
 import requests
 
 '''Global variables'''
-FINAL_X, FINAL_Y, FINAL_Z = 70.508037, -469.2935 , -4.42
-CHECKPOINTS_LIST = [[73,-523,-5],[22,-499,-5.2],[-41.45,-467,-5.7]]
+FINAL_X, FINAL_Y, FINAL_Z = 70.16, -416.83 , -4.47
+CHECKPOINTS_LIST = [[152.16,-434.83,-3.237],[48.6,-471.2,-4.53],[-37.3,-420.7,-6.71]]
 API_URL = 'https://wicked-pink-cormorant.cyclic.app/scores'
 HEADERS = {'Content-type': 'application/json', 'Accept': 'text/plain'}
 '''-----------------'''
@@ -75,7 +75,7 @@ class Timer():
 class Judge(Node):
     def __init__(self):
         despawn_prius.despawn()
-        spawn_prius.spawn(72.71,-470.1,-5,-0.007621,0.025542,-0.135)
+        spawn_prius.spawn(75.71,-416.83,-5,-0.007621,0.025542,-0.135)
         self.final_pos = {"x": FINAL_X,"y": FINAL_Y,"z": FINAL_Z}
         self.timer = Timer()
         self.checkpoints = Checkpoints()
@@ -112,7 +112,7 @@ class Judge(Node):
         ## check if the car passed all checkpoints, and just passed the finish line
         if(((self.checkpoints.curr_checkpoint_idx == 3 or self.checkpoints.curr_checkpoint_idx == -1 ) and
             (abs(y-self.final_pos['y'])<=6) and
-              (abs(z-self.final_pos['z'])<=1) and
+              (abs(z-self.final_pos['z'])<=2) and
                 abs(x-self.final_pos['x'])<=6)) and self.lap_completed < 2:
             
             self.get_logger().info(str("You finished your race!!!!!"))
@@ -122,7 +122,7 @@ class Judge(Node):
                 #remove the car from the scene and then add it again in the new start position
                 despawn_prius.despawn()
                 time.sleep(1)
-                spawn_prius.spawn(67.167259,-468.920073,-4.9,-0.000198,0.00,12)
+                spawn_prius.spawn(70.167259,-419.83,-5,-0.000198,0.00,12)
                 time.sleep(0.5)
                 #restart the subscriber to prevent glitches
                 self.pose_subscriber = self.create_subscription(Odometry,"/prius/odom",self.callback,10)
